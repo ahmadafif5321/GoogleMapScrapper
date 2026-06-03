@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  scraper:
+    image: gosom/google-maps-scraper:latest
+    volumes:
+      - gmaps_playwright_cache:/opt
+      - ./data/raw:/out
+      - ./scraper/queries.txt:/queries.txt:ro
+    command:
+      - "-input"
+      - "/queries.txt"
+      - "-results"
+      - "/out/results.json"
+      - "-json"
+      - "-depth"
+      - "2"
+      - "-c"
+      - "4"
+      - "-extra-reviews"
+      - "-exit-on-inactivity"
+      - "5m"
+      - "-lang"
+      - "en"
+    profiles:
+      - scrape
+
+volumes:
+  gmaps_playwright_cache:
