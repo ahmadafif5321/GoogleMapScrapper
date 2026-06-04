@@ -48,7 +48,7 @@ def load_queries(filepath: Path) -> List[str]:
 
 
 def merge_reviews(output_dir: Path = PROCESSED_DIR) -> Optional[pd.DataFrame]:
-    """Merge all collected reviews into a single DataFrame."""
+    """Merge all collected reviews into a single DataFrame and export CSV."""
     parquet_files = sorted(output_dir.glob("batch_*_reviews.parquet"))
     if not parquet_files:
         print("[collector] No batch files found to merge.")
@@ -72,12 +72,139 @@ def merge_reviews(output_dir: Path = PROCESSED_DIR) -> Optional[pd.DataFrame]:
     merged_path = output_dir / "collected_all_reviews.parquet"
     merged.to_parquet(merged_path, index=False)
 
+    # Also export CSV
+    csv_path = output_dir / "collected_all_reviews.csv"
+    merged.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
     places_count = merged["place_name"].nunique()
     print(f"[collector] Merged: {len(merged)} reviews from {places_count} places "
           f"({len(parquet_files)} batches)")
-    print(f"[collector] Saved to {merged_path}")
+    print(f"[collector] Saved: {merged_path} + {csv_path}")
 
     return merged
+
+
+def export_all_csv():
+    """Export all collected data as CSV files."""
+    import pandas as pd
+
+    # Reviews CSV - try multiple sources
+    reviews_paths = [
+        PROCESSED_DIR / "collected_all_reviews.parquet",
+        PROCESSED_DIR / "results_full_reviews.parquet",
+        PROCESSED_DIR / "scraped_results_reviews.parquet",
+        PROCESSED_DIR / "results_reviews.parquet",
+    ]
+
+    reviews_df = None
+    for rp in reviews_paths:
+        if rp.exists():
+            reviews_df = pd.read_parquet(rp)
+            break
+
+    if reviews_df is not None and not reviews_df.empty:
+        csv_path = PROCESSED_DIR / "all_reviews.csv"
+        reviews_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+        print(f"[export] Reviews: {csv_path} ({len(reviews_df)} rows)")
+
+        # Places summary
+        places = reviews_df.groupby("place_name").agg(
+            total_reviews=("review_text", "count"),
+            avg_rating=("review_rating", "mean"),
+            category=("place_category", "first"),
+            address=("place_address", "first"),
+        ).reset_index().round(2)
+        places = places.sort_values("total_reviews", ascending=False)
+        places_path = PROCESSED_DIR / "places_summary.csv"
+        places.to_csv(places_path, index=False, encoding="utf-8-sig")
+        print(f"[export] Places summary: {places_path} ({len(places)} places)")
+    else:
+        print("[export] No reviews found. Run scraper or collector first.")
+
+    # Analysis results CSV (if exists)
+    analysis_paths = list(PROCESSED_DIR.glob("*_results.json"))
+    if analysis_paths:
+        latest = max(analysis_paths, key=lambda p: p.stat().st_mtime)
+        import json
+        with open(latest) as f:
+            data = json.load(f)
+
+        # Sentiment summary CSV
+        sent = data.get("sentiment_summary", {})
+        if sent:
+            rows = []
+            for place, s in sent.items():
+                rows.append({
+                    "place_name": place,
+                    "total_reviews": s.get("total_reviews", 0),
+                    "positive_pct": s.get("positive_pct", 0),
+                    "neutral_pct": s.get("neutral_pct", 0),
+                    "negative_pct": s.get("negative_pct", 0),
+                    "avg_sentiment_score": s.get("avg_sentiment_score", 0),
+                    "avg_review_rating": s.get("avg_review_rating", 0),
+                })
+            sent_df = pd.DataFrame(rows).sort_values("positive_pct", ascending=False)
+            sent_csv = PROCESSED_DIR / "sentiment_by_place.csv"
+            sent_df.to_csv(sent_csv, index=False, encoding="utf-8-sig")
+            print(f"[export] Sentiment: {sent_csv} ({len(rows)} places)")
+
+        # Recommendations CSV
+        recs = data.get("recommendations", [])
+        if recs:
+            rec_rows = []
+            for r in recs:
+                for action in r.get("actions", []):
+                    rec_rows.append({
+                        "severity": r.get("severity", ""),
+                        "category": r.get("category", ""),
+                        "title": r.get("title", ""),
+                        "action": action,
+                        "negative_review_count": r.get("negative_review_count", 0),
+                    })
+            rec_df = pd.DataFrame(rec_rows)
+            rec_csv = PROCESSED_DIR / "recommendations.csv"
+            rec_df.to_csv(rec_csv, index=False, encoding="utf-8-sig")
+            print(f"[export] Recommendations: {rec_csv} ({len(rec_rows)} actions)")
+
+        # Aspect summary CSV
+        aspect = data.get("aspect_summary", {})
+        if aspect:
+            arows = []
+            for name, a in aspect.items():
+                if a.get("total_mentions", 0) > 0:
+                    arows.append({
+                        "aspect": name,
+                        "total_mentions": a.get("total_mentions", 0),
+                        "mention_rate_pct": a.get("mention_rate", 0),
+                        "positive_pct": a.get("positive_pct", 0),
+                        "negative_pct": a.get("negative_pct", 0),
+                        "avg_sentiment": a.get("avg_sentiment_score", 0),
+                    })
+            adf = pd.DataFrame(arows).sort_values("total_mentions", ascending=False)
+            acsv = PROCESSED_DIR / "aspect_summary.csv"
+            adf.to_csv(acsv, index=False, encoding="utf-8-sig")
+            print(f"[export] Aspect summary: {acsv}")
+
+    # Comparison CSV
+    comp = data.get("comparison_report", {}).get("rankings", {})
+    if comp:
+        crows = []
+        for place, c in comp.items():
+            crows.append({
+                "place_name": place,
+                "rank": c.get("rank", 0),
+                "sentiment_health_score": c.get("sentiment_health_score", 0),
+                "positive_pct": c.get("positive_pct", 0),
+                "negative_pct": c.get("negative_pct", 0),
+                "avg_rating": c.get("avg_rating", 0),
+                "total_reviews": c.get("total_reviews", 0),
+            })
+        cdf = pd.DataFrame(crows).sort_values("rank")
+        ccsv = PROCESSED_DIR / "comparison_ranking.csv"
+        cdf.to_csv(ccsv, index=False, encoding="utf-8-sig")
+        print(f"[export] Comparison: {ccsv}")
+
+    print("[export] Done. All CSV files in data/processed/")
 
 
 def run_batch(queries: List[str], batch_num: int, state: dict) -> bool:
@@ -168,6 +295,8 @@ def run_collector(
     delay_seconds: int = 60,
     max_batches: int = 0,
     resume: bool = True,
+    continuous: bool = False,
+    cycle_delay_hours: float = 24.0,
 ):
     """
     Continuous collector - runs until all queries are done or max_batches reached.
@@ -178,6 +307,8 @@ def run_collector(
         delay_seconds: Wait between batches (avoids Google rate limiting)
         max_batches: Stop after N batches (0 = unlimited)
         resume: Resume from previous state
+        continuous: If True, re-runs all queries on a cycle (24/7 mode)
+        cycle_delay_hours: Hours between cycles in continuous mode
     """
     state = load_state() if resume else {
         "queries": [], "completed": {}, "failed": {},
@@ -212,67 +343,89 @@ def run_collector(
 
     pull_image()
 
-    batch_num = 1
-    consecutive_failures = 0
+    cycle = 1
 
     while True:
-        pending = get_pending_queries(state)
+        print(f"\n{'#'*60}")
+        print(f"  CYCLE {cycle}")
+        print(f"{'#'*60}")
 
-        if not pending:
-            print("\n[collector] ALL QUERIES COMPLETE!")
-            break
+        batch_num = 1
+        consecutive_failures = 0
 
-        if max_batches > 0 and batch_num > max_batches:
-            print(f"\n[collector] Reached max_batches={max_batches}. Stopping.")
-            break
+        while True:
+            pending = get_pending_queries(state)
 
-        # Take next batch
-        batch_queries = pending[:batch_size]
-        print(f"\n[collector] Pending: {len(pending)} queries, "
-              f"completed: {len(state['completed'])}, failed: {len(state['failed'])}")
+            if not pending:
+                print("\n[collector] ALL QUERIES COMPLETE!")
+                break
 
-        success = run_batch(batch_queries, batch_num, state)
+            if max_batches > 0 and batch_num > max_batches:
+                print(f"\n[collector] Reached max_batches={max_batches}. Stopping.")
+                break
 
-        if success:
-            consecutive_failures = 0
-        else:
-            consecutive_failures += 1
-            for q in batch_queries:
-                state["failed"][q] = state["failed"].get(q, {"attempts": 0})
-                if isinstance(state["failed"][q], dict):
-                    state["failed"][q]["attempts"] = state["failed"][q].get("attempts", 0) + 1
-                else:
-                    state["failed"][q] = {"attempts": 1, "error": str(state["failed"][q])}
-            save_state(state)
+            # Take next batch
+            batch_queries = pending[:batch_size]
+            print(f"\n[collector] Pending: {len(pending)} queries, "
+                  f"completed: {len(state['completed'])}, failed: {len(state['failed'])}")
 
-            if consecutive_failures >= 3:
-                print("[collector] 3 consecutive failures. Possible rate limit or network issue.")
-                print("[collector] Waiting 5 minutes before continuing...")
-                time.sleep(300)
+            success = run_batch(batch_queries, batch_num, state)
+
+            if success:
                 consecutive_failures = 0
+            else:
+                consecutive_failures += 1
+                for q in batch_queries:
+                    state["failed"][q] = state["failed"].get(q, {"attempts": 0})
+                    if isinstance(state["failed"][q], dict):
+                        state["failed"][q]["attempts"] = state["failed"][q].get("attempts", 0) + 1
+                    else:
+                        state["failed"][q] = {"attempts": 1, "error": str(state["failed"][q])}
+                save_state(state)
 
-        batch_num += 1
+                if consecutive_failures >= 3:
+                    print("[collector] 3 consecutive failures. Possible rate limit or network issue.")
+                    print("[collector] Waiting 5 minutes before continuing...")
+                    time.sleep(300)
+                    consecutive_failures = 0
 
-        # Auto-merge every 10 batches
-        if batch_num % 10 == 0:
-            merge_reviews()
+            batch_num += 1
 
-        # Delay between batches
-        if pending:
-            print(f"[collector] Waiting {delay_seconds}s before next batch...")
-            time.sleep(delay_seconds)
+            # Auto-merge every 10 batches
+            if batch_num % 10 == 0:
+                merge_reviews()
 
-    # Final merge
-    print("\n[collector] Merging all batches...")
-    merge_reviews()
+            # Delay between batches
+            if pending:
+                print(f"[collector] Waiting {delay_seconds}s before next batch...")
+                time.sleep(delay_seconds)
 
-    print(f"\n{'='*60}")
-    print(f"  COLLECTOR FINISHED")
-    print(f"  Places: {state['total_places']}")
-    print(f"  Reviews: {state['total_reviews']}")
-    print(f"  Completed queries: {len(state['completed'])}")
-    print(f"  Failed queries: {len(state['failed'])}")
-    print(f"{'='*60}\n")
+        # Final merge for this cycle
+        print("\n[collector] Merging all batches...")
+        merge_reviews()
+
+        # Export CSV
+        export_all_csv()
+
+        print(f"\n{'='*60}")
+        print(f"  CYCLE {cycle} COMPLETE")
+        print(f"  Places: {state['total_places']}")
+        print(f"  Reviews: {state['total_reviews']}")
+        print(f"  Completed queries: {len(state['completed'])}")
+        print(f"  Failed queries: {len(state['failed'])}")
+        print(f"{'='*60}\n")
+
+        if not continuous:
+            break
+
+        # Reset completed for next cycle (re-scrape to get new reviews)
+        print(f"[collector] Continuous mode: waiting {cycle_delay_hours}h before next cycle...")
+        print(f"[collector] Next cycle will re-scrape all queries for fresh reviews.")
+        time.sleep(cycle_delay_hours * 3600)
+        state["completed"] = {}
+        state["failed"] = {}
+        save_state(state)
+        cycle += 1
 
 
 def reset_collector():

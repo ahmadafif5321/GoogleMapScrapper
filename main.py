@@ -105,6 +105,11 @@ def cmd_dashboard(args):
         print("\nDashboard stopped.")
 
 
+def cmd_export(args):
+    """Export all data as CSV files."""
+    from scraper.collector import export_all_csv
+    export_all_csv()
+
 def cmd_full(args):
     """Run the complete pipeline: scrape + analyze."""
     from scraper.run_scraper import scrape_and_get_reviews
@@ -145,7 +150,6 @@ def cmd_collect(args):
 
     queries_file = Path(args.queries_file or "scraper/queries.txt")
     if not queries_file.exists():
-        # Auto-generate queries if file doesn't exist
         print(f"[collect] Queries file not found: {queries_file}")
         print("[collect] Generating queries for max coverage...")
         from scraper.query_generator import generate_max_coverage, write_queries_file
@@ -158,15 +162,20 @@ def cmd_collect(args):
     batch_size = args.batch_size or 3
     delay = args.delay or 120
     max_batches = args.max_batches or 0
+    continuous = args.continuous
+    cycle_hours = args.cycle_hours or 24
 
+    mode = "CONTINUOUS (24/7)" if continuous else "ONE-SHOT"
     print(f"\n{'='*60}")
-    print(f"  CONTINUOUS COLLECTOR")
+    print(f"  COLLECTOR - {mode}")
     print(f"  Queries file: {queries_file}")
     print(f"  Batch size: {batch_size}")
     print(f"  Delay: {delay}s between batches")
     print(f"  Max batches: {max_batches if max_batches > 0 else 'unlimited'}")
-    print(f"  RAM needed: ~{batch_size * 500}MB (free: check 'free -h')")
-    print(f"  Press Ctrl+C to stop safely (progress is saved)")
+    if continuous:
+        print(f"  Cycle delay: {cycle_hours}h between cycles")
+    print(f"  RAM needed: ~{batch_size * 500}MB")
+    print(f"  Press Ctrl+C to stop (progress saved)")
     print(f"{'='*60}\n")
 
     try:
@@ -176,9 +185,11 @@ def cmd_collect(args):
             delay_seconds=delay,
             max_batches=max_batches,
             resume=not args.reset,
+            continuous=continuous,
+            cycle_delay_hours=cycle_hours,
         )
     except KeyboardInterrupt:
-        print("\n[collect] Stopped by user. Progress saved. Resume with:")
+        print("\n[collect] Stopped. Progress saved. Resume:")
         print(f"  python main.py collect -q {queries_file}")
 
 
@@ -312,6 +323,10 @@ Examples:
                                 help="Seconds between batches (default: 120)")
     collect_parser.add_argument("-m", "--max-batches", type=int, default=0,
                                 help="Max batches to run (0=unlimited)")
+    collect_parser.add_argument("--continuous", action="store_true",
+                                help="Run 24/7, re-scrape every cycle")
+    collect_parser.add_argument("--cycle-hours", type=float, default=24,
+                                help="Hours between cycles in continuous mode (default: 24)")
     collect_parser.add_argument("--reset", action="store_true",
                                 help="Reset progress and start fresh")
     collect_parser.set_defaults(func=cmd_collect)
@@ -324,6 +339,9 @@ Examples:
 
     stats_parser = subparsers.add_parser("stats", help="Show collector progress and stats")
     stats_parser.set_defaults(func=cmd_stats)
+
+    export_parser = subparsers.add_parser("export", help="Export all data as CSV files")
+    export_parser.set_defaults(func=cmd_export)
 
     args = parser.parse_args()
 
