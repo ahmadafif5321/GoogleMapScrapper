@@ -15,11 +15,39 @@ for d in [DATA_DIR, RAW_DIR, PROCESSED_DIR]:
 # ---- Scraper Settings ----
 SCRAPER_DOCKER_IMAGE = "gosom/google-maps-scraper:latest"
 SCRAPER_CONCURRENCY = 4
-SCRAPER_DEPTH = 2
+SCRAPER_DEPTH = 15
 SCRAPER_LANG = "en"
 SCRAPER_EXTRA_REVIEWS = True
-SCRAPER_EXIT_TIMEOUT = "5m"
-SCRAPER_TIMEOUT_SECONDS = 600
+SCRAPER_EXIT_TIMEOUT = "30m"
+SCRAPER_TIMEOUT_SECONDS = 7200
+
+# Scraper: geographic targeting (set to None to disable)
+SCRAPER_GEO = None           # "lat,lon" e.g., "2.9221,101.6514" (Cyberjaya)
+SCRAPER_RADIUS = None        # meters, e.g., 50000 for 50km radius
+SCRAPER_ZOOM = None          # 1-21, e.g., 14 for city-level
+SCRAPER_GRID_BBOX = None     # "minLat,minLon,maxLat,maxLon" for grid mode
+SCRAPER_GRID_CELL = None     # grid cell size in km (used with grid-bbox)
+SCRAPER_FAST_MODE = False    # quick mode: 21 results per query, basic fields only
+
+
+# ---- Maximum Data Collection Presets ----
+# Uncomment and set these to max out data:
+#
+# For a city-wide scan (grid mode - MOST data):
+#   SCRAPER_GRID_BBOX = "minLat,minLon,maxLat,maxLon"
+#   SCRAPER_GRID_CELL = 1.0  # 1km cells
+#   SCRAPER_ZOOM = 16        # high zoom per cell
+#   SCRAPER_DEPTH = 5        # depth per cell
+#
+# For a radius scan (simpler):
+#   SCRAPER_GEO = "2.9221,101.6514"     # center point
+#   SCRAPER_RADIUS = 50000              # 50km radius
+#   SCRAPER_ZOOM = 14                   # city zoom
+#   SCRAPER_DEPTH = 10                  # max scroll depth
+#
+# For multiple keywords in same area:
+#   Add more queries: "clinic in Cyberjaya", "doctor in Cyberjaya",
+#   "hospital in Cyberjaya", "medical center in Cyberjaya", etc.
 
 # ---- Analytics Settings ----
 SENTIMENT_MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"

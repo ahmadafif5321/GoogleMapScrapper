@@ -13,7 +13,9 @@ import pandas as pd
 from config import (
     RAW_DIR, SCRAPER_DOCKER_IMAGE, SCRAPER_CONCURRENCY,
     SCRAPER_DEPTH, SCRAPER_LANG, SCRAPER_EXTRA_REVIEWS,
-    SCRAPER_EXIT_TIMEOUT, SCRAPER_TIMEOUT_SECONDS
+    SCRAPER_EXIT_TIMEOUT, SCRAPER_TIMEOUT_SECONDS,
+    SCRAPER_GEO, SCRAPER_RADIUS, SCRAPER_ZOOM,
+    SCRAPER_GRID_BBOX, SCRAPER_GRID_CELL, SCRAPER_FAST_MODE,
 )
 
 QUERIES_FILE = Path(__file__).resolve().parent / "queries.txt"
@@ -92,6 +94,19 @@ def run_scraper(queries: list[str], output_name: str = "results") -> Optional[pd
     if SCRAPER_EXTRA_REVIEWS:
         cmd.append("-extra-reviews")
 
+    if SCRAPER_GEO:
+        cmd.extend(["-geo", SCRAPER_GEO])
+    if SCRAPER_RADIUS:
+        cmd.extend(["-radius", str(SCRAPER_RADIUS)])
+    if SCRAPER_ZOOM:
+        cmd.extend(["-zoom", str(SCRAPER_ZOOM)])
+    if SCRAPER_GRID_BBOX:
+        cmd.extend(["-grid-bbox", SCRAPER_GRID_BBOX])
+    if SCRAPER_GRID_CELL:
+        cmd.extend(["-grid-cell", str(SCRAPER_GRID_CELL)])
+    if SCRAPER_FAST_MODE:
+        cmd.append("-fast-mode")
+
     print(f"[scraper] Running: {' '.join(cmd)}")
     print(f"[scraper] This may take several minutes...")
 
@@ -145,9 +160,11 @@ def parse_results(json_path: Path) -> Optional[pd.DataFrame]:
 def extract_reviews_from_df(df: pd.DataFrame) -> pd.DataFrame:
     """
     Extract and flatten reviews from the scraped DataFrame.
+    Merges user_reviews + user_reviews_extended, deduplicates.
     Each row becomes one review.
     """
     reviews_list = []
+    seen = set()
 
     for _, row in df.iterrows():
         place_name = row.get("title", "Unknown")
@@ -156,33 +173,51 @@ def extract_reviews_from_df(df: pd.DataFrame) -> pd.DataFrame:
         place_category = row.get("category", "")
         place_address = row.get("address", "")
 
-        user_reviews = row.get("user_reviews", [])
-        if isinstance(user_reviews, str):
-            try:
-                user_reviews = json.loads(user_reviews)
-            except (json.JSONDecodeError, TypeError):
-                user_reviews = []
+        # Merge both review sources
+        all_reviews = []
+        for field in ["user_reviews", "user_reviews_extended"]:
+            raw = row.get(field)
+            if raw is None:
+                continue
+            if isinstance(raw, str):
+                try:
+                    raw = json.loads(raw)
+                except (json.JSONDecodeError, TypeError):
+                    continue
+            if isinstance(raw, list):
+                all_reviews.extend(raw)
 
-        if not user_reviews:
+        if not all_reviews:
             continue
 
-        for review in user_reviews:
-            if isinstance(review, dict):
-                desc = review.get("Description", "") or review.get("text", "") or review.get("text_original", "") or review.get("text_translated", "")
-                rating = review.get("Rating", 0) or review.get("stars", 0) or review.get("rating_float", 0)
-                reviews_list.append({
-                    "place_name": place_name,
-                    "place_id": place_id,
-                    "place_rating": place_rating,
-                    "place_category": place_category,
-                    "place_address": place_address,
-                    "review_text": desc,
-                    "review_rating": rating,
-                    "review_date": review.get("When", "") or review.get("published_at", ""),
-                    "reviewer_name": review.get("Name", "") or review.get("name", ""),
-                    "reviewer_photos": review.get("photos_count", 0),
-                    "review_likes": review.get("likes_count", 0),
-                })
+        for review in all_reviews:
+            if not isinstance(review, dict):
+                continue
+            desc = (review.get("Description", "") or review.get("text", "")
+                    or review.get("text_original", "") or review.get("text_translated", ""))
+            if not desc or not desc.strip():
+                continue
+
+            # Deduplicate by place_id + first 100 chars of review
+            dedup_key = (str(place_id), desc[:100].strip().lower())
+            if dedup_key in seen:
+                continue
+            seen.add(dedup_key)
+
+            rating = review.get("Rating", 0) or review.get("stars", 0) or review.get("rating_float", 0)
+            reviews_list.append({
+                "place_name": place_name,
+                "place_id": str(place_id),
+                "place_rating": place_rating,
+                "place_category": place_category,
+                "place_address": place_address,
+                "review_text": desc,
+                "review_rating": rating,
+                "review_date": review.get("When", "") or review.get("published_at", ""),
+                "reviewer_name": review.get("Name", "") or review.get("name", ""),
+                "reviewer_photos": review.get("photos_count", 0),
+                "review_likes": review.get("likes_count", 0),
+            })
 
     if not reviews_list:
         print("[scraper] No reviews found in data.")
@@ -190,9 +225,9 @@ def extract_reviews_from_df(df: pd.DataFrame) -> pd.DataFrame:
 
     reviews_df = pd.DataFrame(reviews_list)
     reviews_df = reviews_df[reviews_df["review_text"].str.strip() != ""]
-    reviews_df = reviews_df.drop_duplicates(subset=["place_id", "review_text"])
 
-    print(f"[scraper] Extracted {len(reviews_df)} reviews from {df['title'].nunique()} places.")
+    print(f"[scraper] Extracted {len(reviews_df)} reviews from {df['title'].nunique()} places "
+          f"(avg {len(reviews_df)/max(df['title'].nunique(),1):.0f} per place).")
 
     return reviews_df
 
