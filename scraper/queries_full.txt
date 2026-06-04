@@ -1,0 +1,336 @@
+# Google Maps Scraper Queries
+# Auto-generated: 332 queries
+# Lines starting with # are ignored
+
+clinic in Cyberjaya
+klinik in Cyberjaya
+hospital in Cyberjaya
+medical clinic in Cyberjaya
+doctor in Cyberjaya
+dental clinic in Cyberjaya
+klinik gigi in Cyberjaya
+klinik kesihatan in Cyberjaya
+pharmacy in Cyberjaya
+health clinic in Cyberjaya
+klinik 24 jam in Cyberjaya
+specialist clinic in Cyberjaya
+klinik pakar in Cyberjaya
+family clinic in Cyberjaya
+klinik keluarga in Cyberjaya
+medical centre in Cyberjaya
+pusat perubatan in Cyberjaya
+child specialist clinic in Cyberjaya
+klinik kanak kanak in Cyberjaya
+women clinic in Cyberjaya
+klinik wanita in Cyberjaya
+physiotherapy in Cyberjaya
+fisioterapi in Cyberjaya
+diagnostic centre in Cyberjaya
+pusat diagnostik in Cyberjaya
+clinic in Putrajaya
+klinik in Putrajaya
+hospital in Putrajaya
+medical clinic in Putrajaya
+doctor in Putrajaya
+dental clinic in Putrajaya
+klinik gigi in Putrajaya
+klinik kesihatan in Putrajaya
+pharmacy in Putrajaya
+health clinic in Putrajaya
+klinik 24 jam in Putrajaya
+specialist clinic in Putrajaya
+klinik pakar in Putrajaya
+family clinic in Putrajaya
+klinik keluarga in Putrajaya
+medical centre in Putrajaya
+pusat perubatan in Putrajaya
+child specialist clinic in Putrajaya
+klinik kanak kanak in Putrajaya
+women clinic in Putrajaya
+klinik wanita in Putrajaya
+physiotherapy in Putrajaya
+fisioterapi in Putrajaya
+diagnostic centre in Putrajaya
+pusat diagnostik in Putrajaya
+clinic in Dengkil
+klinik in Dengkil
+hospital in Dengkil
+medical clinic in Dengkil
+doctor in Dengkil
+dental clinic in Dengkil
+klinik gigi in Dengkil
+klinik kesihatan in Dengkil
+pharmacy in Dengkil
+health clinic in Dengkil
+klinik 24 jam in Dengkil
+specialist clinic in Dengkil
+klinik pakar in Dengkil
+family clinic in Dengkil
+klinik keluarga in Dengkil
+medical centre in Dengkil
+pusat perubatan in Dengkil
+child specialist clinic in Dengkil
+klinik kanak kanak in Dengkil
+women clinic in Dengkil
+klinik wanita in Dengkil
+physiotherapy in Dengkil
+fisioterapi in Dengkil
+diagnostic centre in Dengkil
+pusat diagnostik in Dengkil
+clinic in Bangi
+klinik in Bangi
+hospital in Bangi
+medical clinic in Bangi
+doctor in Bangi
+dental clinic in Bangi
+klinik gigi in Bangi
+klinik kesihatan in Bangi
+pharmacy in Bangi
+health clinic in Bangi
+klinik 24 jam in Bangi
+specialist clinic in Bangi
+klinik pakar in Bangi
+family clinic in Bangi
+klinik keluarga in Bangi
+medical centre in Bangi
+pusat perubatan in Bangi
+child specialist clinic in Bangi
+klinik kanak kanak in Bangi
+women clinic in Bangi
+klinik wanita in Bangi
+physiotherapy in Bangi
+fisioterapi in Bangi
+diagnostic centre in Bangi
+pusat diagnostik in Bangi
+clinic in Kajang
+klinik in Kajang
+hospital in Kajang
+medical clinic in Kajang
+doctor in Kajang
+dental clinic in Kajang
+klinik gigi in Kajang
+klinik kesihatan in Kajang
+pharmacy in Kajang
+health clinic in Kajang
+klinik 24 jam in Kajang
+specialist clinic in Kajang
+klinik pakar in Kajang
+family clinic in Kajang
+klinik keluarga in Kajang
+medical centre in Kajang
+pusat perubatan in Kajang
+child specialist clinic in Kajang
+klinik kanak kanak in Kajang
+women clinic in Kajang
+klinik wanita in Kajang
+physiotherapy in Kajang
+fisioterapi in Kajang
+diagnostic centre in Kajang
+pusat diagnostik in Kajang
+clinic in Seri Kembangan
+klinik in Seri Kembangan
+hospital in Seri Kembangan
+medical clinic in Seri Kembangan
+doctor in Seri Kembangan
+dental clinic in Seri Kembangan
+klinik gigi in Seri Kembangan
+klinik kesihatan in Seri Kembangan
+pharmacy in Seri Kembangan
+health clinic in Seri Kembangan
+klinik 24 jam in Seri Kembangan
+specialist clinic in Seri Kembangan
+klinik pakar in Seri Kembangan
+family clinic in Seri Kembangan
+klinik keluarga in Seri Kembangan
+medical centre in Seri Kembangan
+pusat perubatan in Seri Kembangan
+child specialist clinic in Seri Kembangan
+klinik kanak kanak in Seri Kembangan
+women clinic in Seri Kembangan
+klinik wanita in Seri Kembangan
+physiotherapy in Seri Kembangan
+fisioterapi in Seri Kembangan
+diagnostic centre in Seri Kembangan
+pusat diagnostik in Seri Kembangan
+clinic in Puchong
+klinik in Puchong
+hospital in Puchong
+medical clinic in Puchong
+doctor in Puchong
+dental clinic in Puchong
+klinik gigi in Puchong
+klinik kesihatan in Puchong
+pharmacy in Puchong
+health clinic in Puchong
+klinik 24 jam in Puchong
+specialist clinic in Puchong
+klinik pakar in Puchong
+family clinic in Puchong
+klinik keluarga in Puchong
+medical centre in Puchong
+pusat perubatan in Puchong
+child specialist clinic in Puchong
+klinik kanak kanak in Puchong
+women clinic in Puchong
+klinik wanita in Puchong
+physiotherapy in Puchong
+fisioterapi in Puchong
+diagnostic centre in Puchong
+pusat diagnostik in Puchong
+clinic in Serdang
+klinik in Serdang
+hospital in Serdang
+medical clinic in Serdang
+doctor in Serdang
+dental clinic in Serdang
+klinik gigi in Serdang
+klinik kesihatan in Serdang
+pharmacy in Serdang
+health clinic in Serdang
+klinik 24 jam in Serdang
+specialist clinic in Serdang
+klinik pakar in Serdang
+family clinic in Serdang
+klinik keluarga in Serdang
+medical centre in Serdang
+pusat perubatan in Serdang
+child specialist clinic in Serdang
+klinik kanak kanak in Serdang
+women clinic in Serdang
+klinik wanita in Serdang
+physiotherapy in Serdang
+fisioterapi in Serdang
+diagnostic centre in Serdang
+pusat diagnostik in Serdang
+clinic in Bandar Baru Bangi
+klinik in Bandar Baru Bangi
+hospital in Bandar Baru Bangi
+medical clinic in Bandar Baru Bangi
+doctor in Bandar Baru Bangi
+dental clinic in Bandar Baru Bangi
+klinik gigi in Bandar Baru Bangi
+klinik kesihatan in Bandar Baru Bangi
+pharmacy in Bandar Baru Bangi
+health clinic in Bandar Baru Bangi
+klinik 24 jam in Bandar Baru Bangi
+specialist clinic in Bandar Baru Bangi
+klinik pakar in Bandar Baru Bangi
+family clinic in Bandar Baru Bangi
+klinik keluarga in Bandar Baru Bangi
+medical centre in Bandar Baru Bangi
+pusat perubatan in Bandar Baru Bangi
+child specialist clinic in Bandar Baru Bangi
+klinik kanak kanak in Bandar Baru Bangi
+women clinic in Bandar Baru Bangi
+klinik wanita in Bandar Baru Bangi
+physiotherapy in Bandar Baru Bangi
+fisioterapi in Bandar Baru Bangi
+diagnostic centre in Bandar Baru Bangi
+pusat diagnostik in Bandar Baru Bangi
+clinic in Sepang
+klinik in Sepang
+hospital in Sepang
+medical clinic in Sepang
+doctor in Sepang
+dental clinic in Sepang
+klinik gigi in Sepang
+klinik kesihatan in Sepang
+pharmacy in Sepang
+health clinic in Sepang
+klinik 24 jam in Sepang
+specialist clinic in Sepang
+klinik pakar in Sepang
+family clinic in Sepang
+klinik keluarga in Sepang
+medical centre in Sepang
+pusat perubatan in Sepang
+child specialist clinic in Sepang
+klinik kanak kanak in Sepang
+women clinic in Sepang
+klinik wanita in Sepang
+physiotherapy in Sepang
+fisioterapi in Sepang
+diagnostic centre in Sepang
+pusat diagnostik in Sepang
+clinic in Putra Heights
+klinik in Putra Heights
+hospital in Putra Heights
+medical clinic in Putra Heights
+doctor in Putra Heights
+dental clinic in Putra Heights
+klinik gigi in Putra Heights
+klinik kesihatan in Putra Heights
+pharmacy in Putra Heights
+health clinic in Putra Heights
+klinik 24 jam in Putra Heights
+specialist clinic in Putra Heights
+klinik pakar in Putra Heights
+family clinic in Putra Heights
+klinik keluarga in Putra Heights
+medical centre in Putra Heights
+pusat perubatan in Putra Heights
+child specialist clinic in Putra Heights
+klinik kanak kanak in Putra Heights
+women clinic in Putra Heights
+klinik wanita in Putra Heights
+physiotherapy in Putra Heights
+fisioterapi in Putra Heights
+diagnostic centre in Putra Heights
+pusat diagnostik in Putra Heights
+clinic in Subang Jaya
+klinik in Subang Jaya
+hospital in Subang Jaya
+medical clinic in Subang Jaya
+doctor in Subang Jaya
+dental clinic in Subang Jaya
+klinik gigi in Subang Jaya
+klinik kesihatan in Subang Jaya
+pharmacy in Subang Jaya
+health clinic in Subang Jaya
+klinik 24 jam in Subang Jaya
+specialist clinic in Subang Jaya
+klinik pakar in Subang Jaya
+family clinic in Subang Jaya
+klinik keluarga in Subang Jaya
+medical centre in Subang Jaya
+pusat perubatan in Subang Jaya
+child specialist clinic in Subang Jaya
+klinik kanak kanak in Subang Jaya
+women clinic in Subang Jaya
+klinik wanita in Subang Jaya
+physiotherapy in Subang Jaya
+fisioterapi in Subang Jaya
+diagnostic centre in Subang Jaya
+pusat diagnostik in Subang Jaya
+clinic near 2.9221,101.6514
+clinic near 2.9221,101.6514
+clinic near 2.9221,101.6514
+clinic near 2.9221,101.6514
+clinic near 2.9313,101.6879
+clinic near 2.9313,101.6879
+clinic near 2.9313,101.6879
+clinic near 2.9313,101.6879
+clinic near 2.8730,101.6874
+clinic near 2.8730,101.6874
+clinic near 2.8730,101.6874
+clinic near 2.8730,101.6874
+clinic near 2.9031,101.7870
+clinic near 2.9031,101.7870
+clinic near 2.9031,101.7870
+clinic near 2.9031,101.7870
+clinic near 2.9930,101.7890
+clinic near 2.9930,101.7890
+clinic near 2.9930,101.7890
+clinic near 2.9930,101.7890
+clinic near 3.0063,101.7066
+clinic near 3.0063,101.7066
+clinic near 3.0063,101.7066
+clinic near 3.0063,101.7066
+clinic near 3.0253,101.6178
+clinic near 3.0253,101.6178
+clinic near 3.0253,101.6178
+clinic near 3.0253,101.6178
+clinic near 2.9761,101.7000
+clinic near 2.9761,101.7000
+clinic near 2.9761,101.7000
+clinic near 2.9761,101.7000
