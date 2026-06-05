@@ -1,0 +1,84 @@
+# Google Maps Scraper Queries
+# Auto-generated: 80 queries
+# Lines starting with # are ignored
+
+restaurant in Cyberjaya
+cafe in Cyberjaya
+kopitiam in Cyberjaya
+kedai makan in Cyberjaya
+mamak in Cyberjaya
+nasi kandar in Cyberjaya
+coffee shop in Cyberjaya
+bakery in Cyberjaya
+western food in Cyberjaya
+bubble tea in Cyberjaya
+car workshop in Cyberjaya
+kedai kereta in Cyberjaya
+tyre shop in Cyberjaya
+car wash in Cyberjaya
+car detailing in Cyberjaya
+motorcycle workshop in Cyberjaya
+car service centre in Cyberjaya
+bengkel kereta in Cyberjaya
+car battery shop in Cyberjaya
+car aircond service in Cyberjaya
+restaurant in Putrajaya
+cafe in Putrajaya
+kopitiam in Putrajaya
+kedai makan in Putrajaya
+mamak in Putrajaya
+nasi kandar in Putrajaya
+coffee shop in Putrajaya
+bakery in Putrajaya
+western food in Putrajaya
+bubble tea in Putrajaya
+car workshop in Putrajaya
+kedai kereta in Putrajaya
+tyre shop in Putrajaya
+car wash in Putrajaya
+car detailing in Putrajaya
+motorcycle workshop in Putrajaya
+car service centre in Putrajaya
+bengkel kereta in Putrajaya
+car battery shop in Putrajaya
+car aircond service in Putrajaya
+restaurant in Bangi
+cafe in Bangi
+kopitiam in Bangi
+kedai makan in Bangi
+mamak in Bangi
+nasi kandar in Bangi
+coffee shop in Bangi
+bakery in Bangi
+western food in Bangi
+bubble tea in Bangi
+car workshop in Bangi
+kedai kereta in Bangi
+tyre shop in Bangi
+car wash in Bangi
+car detailing in Bangi
+motorcycle workshop in Bangi
+car service centre in Bangi
+bengkel kereta in Bangi
+car battery shop in Bangi
+car aircond service in Bangi
+restaurant in Kajang
+cafe in Kajang
+kopitiam in Kajang
+kedai makan in Kajang
+mamak in Kajang
+nasi kandar in Kajang
+coffee shop in Kajang
+bakery in Kajang
+western food in Kajang
+bubble tea in Kajang
+car workshop in Kajang
+kedai kereta in Kajang
+tyre shop in Kajang
+car wash in Kajang
+car detailing in Kajang
+motorcycle workshop in Kajang
+car service centre in Kajang
+bengkel kereta in Kajang
+car battery shop in Kajang
+car aircond service in Kajang

@@ -1,756 +1,316 @@
 {
   "queries": [
-    "clinic in Cyberjaya",
-    "klinik in Cyberjaya",
-    "hospital in Cyberjaya",
-    "medical clinic in Cyberjaya",
-    "doctor in Cyberjaya",
-    "dental clinic in Cyberjaya",
-    "klinik gigi in Cyberjaya",
-    "klinik kesihatan in Cyberjaya",
-    "pharmacy in Cyberjaya",
-    "health clinic in Cyberjaya",
-    "klinik 24 jam in Cyberjaya",
-    "specialist clinic in Cyberjaya",
-    "klinik pakar in Cyberjaya",
-    "family clinic in Cyberjaya",
-    "klinik keluarga in Cyberjaya",
-    "medical centre in Cyberjaya",
-    "pusat perubatan in Cyberjaya",
-    "child specialist clinic in Cyberjaya",
-    "klinik kanak kanak in Cyberjaya",
-    "women clinic in Cyberjaya",
-    "klinik wanita in Cyberjaya",
-    "physiotherapy in Cyberjaya",
-    "fisioterapi in Cyberjaya",
-    "diagnostic centre in Cyberjaya",
-    "pusat diagnostik in Cyberjaya",
-    "clinic in Putrajaya",
-    "klinik in Putrajaya",
-    "hospital in Putrajaya",
-    "medical clinic in Putrajaya",
-    "doctor in Putrajaya",
-    "dental clinic in Putrajaya",
-    "klinik gigi in Putrajaya",
-    "klinik kesihatan in Putrajaya",
-    "pharmacy in Putrajaya",
-    "health clinic in Putrajaya",
-    "klinik 24 jam in Putrajaya",
-    "specialist clinic in Putrajaya",
-    "klinik pakar in Putrajaya",
-    "family clinic in Putrajaya",
-    "klinik keluarga in Putrajaya",
-    "medical centre in Putrajaya",
-    "pusat perubatan in Putrajaya",
-    "child specialist clinic in Putrajaya",
-    "klinik kanak kanak in Putrajaya",
-    "women clinic in Putrajaya",
-    "klinik wanita in Putrajaya",
-    "physiotherapy in Putrajaya",
-    "fisioterapi in Putrajaya",
-    "diagnostic centre in Putrajaya",
-    "pusat diagnostik in Putrajaya",
-    "clinic in Dengkil",
-    "klinik in Dengkil",
-    "hospital in Dengkil",
-    "medical clinic in Dengkil",
-    "doctor in Dengkil",
-    "dental clinic in Dengkil",
-    "klinik gigi in Dengkil",
-    "klinik kesihatan in Dengkil",
-    "pharmacy in Dengkil",
-    "health clinic in Dengkil",
-    "klinik 24 jam in Dengkil",
-    "specialist clinic in Dengkil",
-    "klinik pakar in Dengkil",
-    "family clinic in Dengkil",
-    "klinik keluarga in Dengkil",
-    "medical centre in Dengkil",
-    "pusat perubatan in Dengkil",
-    "child specialist clinic in Dengkil",
-    "klinik kanak kanak in Dengkil",
-    "women clinic in Dengkil",
-    "klinik wanita in Dengkil",
-    "physiotherapy in Dengkil",
-    "fisioterapi in Dengkil",
-    "diagnostic centre in Dengkil",
-    "pusat diagnostik in Dengkil",
-    "clinic in Bangi",
-    "klinik in Bangi",
-    "hospital in Bangi",
-    "medical clinic in Bangi",
-    "doctor in Bangi",
-    "dental clinic in Bangi",
-    "klinik gigi in Bangi",
-    "klinik kesihatan in Bangi",
-    "pharmacy in Bangi",
-    "health clinic in Bangi",
-    "klinik 24 jam in Bangi",
-    "specialist clinic in Bangi",
-    "klinik pakar in Bangi",
-    "family clinic in Bangi",
-    "klinik keluarga in Bangi",
-    "medical centre in Bangi",
-    "pusat perubatan in Bangi",
-    "child specialist clinic in Bangi",
-    "klinik kanak kanak in Bangi",
-    "women clinic in Bangi",
-    "klinik wanita in Bangi",
-    "physiotherapy in Bangi",
-    "fisioterapi in Bangi",
-    "diagnostic centre in Bangi",
-    "pusat diagnostik in Bangi",
-    "clinic in Kajang",
-    "klinik in Kajang",
-    "hospital in Kajang",
-    "medical clinic in Kajang",
-    "doctor in Kajang",
-    "dental clinic in Kajang",
-    "klinik gigi in Kajang",
-    "klinik kesihatan in Kajang",
-    "pharmacy in Kajang",
-    "health clinic in Kajang",
-    "klinik 24 jam in Kajang",
-    "specialist clinic in Kajang",
-    "klinik pakar in Kajang",
-    "family clinic in Kajang",
-    "klinik keluarga in Kajang",
-    "medical centre in Kajang",
-    "pusat perubatan in Kajang",
-    "child specialist clinic in Kajang",
-    "klinik kanak kanak in Kajang",
-    "women clinic in Kajang",
-    "klinik wanita in Kajang",
-    "physiotherapy in Kajang",
-    "fisioterapi in Kajang",
-    "diagnostic centre in Kajang",
-    "pusat diagnostik in Kajang",
-    "clinic in Seri Kembangan",
-    "klinik in Seri Kembangan",
-    "hospital in Seri Kembangan",
-    "medical clinic in Seri Kembangan",
-    "doctor in Seri Kembangan",
-    "dental clinic in Seri Kembangan",
-    "klinik gigi in Seri Kembangan",
-    "klinik kesihatan in Seri Kembangan",
-    "pharmacy in Seri Kembangan",
-    "health clinic in Seri Kembangan",
-    "klinik 24 jam in Seri Kembangan",
-    "specialist clinic in Seri Kembangan",
-    "klinik pakar in Seri Kembangan",
-    "family clinic in Seri Kembangan",
-    "klinik keluarga in Seri Kembangan",
-    "medical centre in Seri Kembangan",
-    "pusat perubatan in Seri Kembangan",
-    "child specialist clinic in Seri Kembangan",
-    "klinik kanak kanak in Seri Kembangan",
-    "women clinic in Seri Kembangan",
-    "klinik wanita in Seri Kembangan",
-    "physiotherapy in Seri Kembangan",
-    "fisioterapi in Seri Kembangan",
-    "diagnostic centre in Seri Kembangan",
-    "pusat diagnostik in Seri Kembangan",
-    "clinic in Puchong",
-    "klinik in Puchong",
-    "hospital in Puchong",
-    "medical clinic in Puchong",
-    "doctor in Puchong",
-    "dental clinic in Puchong",
-    "klinik gigi in Puchong",
-    "klinik kesihatan in Puchong",
-    "pharmacy in Puchong",
-    "health clinic in Puchong",
-    "klinik 24 jam in Puchong",
-    "specialist clinic in Puchong",
-    "klinik pakar in Puchong",
-    "family clinic in Puchong",
-    "klinik keluarga in Puchong",
-    "medical centre in Puchong",
-    "pusat perubatan in Puchong",
-    "child specialist clinic in Puchong",
-    "klinik kanak kanak in Puchong",
-    "women clinic in Puchong",
-    "klinik wanita in Puchong",
-    "physiotherapy in Puchong",
-    "fisioterapi in Puchong",
-    "diagnostic centre in Puchong",
-    "pusat diagnostik in Puchong",
-    "clinic in Serdang",
-    "klinik in Serdang",
-    "hospital in Serdang",
-    "medical clinic in Serdang",
-    "doctor in Serdang",
-    "dental clinic in Serdang",
-    "klinik gigi in Serdang",
-    "klinik kesihatan in Serdang",
-    "pharmacy in Serdang",
-    "health clinic in Serdang",
-    "klinik 24 jam in Serdang",
-    "specialist clinic in Serdang",
-    "klinik pakar in Serdang",
-    "family clinic in Serdang",
-    "klinik keluarga in Serdang",
-    "medical centre in Serdang",
-    "pusat perubatan in Serdang",
-    "child specialist clinic in Serdang",
-    "klinik kanak kanak in Serdang",
-    "women clinic in Serdang",
-    "klinik wanita in Serdang",
-    "physiotherapy in Serdang",
-    "fisioterapi in Serdang",
-    "diagnostic centre in Serdang",
-    "pusat diagnostik in Serdang",
-    "clinic in Bandar Baru Bangi",
-    "klinik in Bandar Baru Bangi",
-    "hospital in Bandar Baru Bangi",
-    "medical clinic in Bandar Baru Bangi",
-    "doctor in Bandar Baru Bangi",
-    "dental clinic in Bandar Baru Bangi",
-    "klinik gigi in Bandar Baru Bangi",
-    "klinik kesihatan in Bandar Baru Bangi",
-    "pharmacy in Bandar Baru Bangi",
-    "health clinic in Bandar Baru Bangi",
-    "klinik 24 jam in Bandar Baru Bangi",
-    "specialist clinic in Bandar Baru Bangi",
-    "klinik pakar in Bandar Baru Bangi",
-    "family clinic in Bandar Baru Bangi",
-    "klinik keluarga in Bandar Baru Bangi",
-    "medical centre in Bandar Baru Bangi",
-    "pusat perubatan in Bandar Baru Bangi",
-    "child specialist clinic in Bandar Baru Bangi",
-    "klinik kanak kanak in Bandar Baru Bangi",
-    "women clinic in Bandar Baru Bangi",
-    "klinik wanita in Bandar Baru Bangi",
-    "physiotherapy in Bandar Baru Bangi",
-    "fisioterapi in Bandar Baru Bangi",
-    "diagnostic centre in Bandar Baru Bangi",
-    "pusat diagnostik in Bandar Baru Bangi",
-    "clinic in Sepang",
-    "klinik in Sepang",
-    "hospital in Sepang",
-    "medical clinic in Sepang",
-    "doctor in Sepang",
-    "dental clinic in Sepang",
-    "klinik gigi in Sepang",
-    "klinik kesihatan in Sepang",
-    "pharmacy in Sepang",
-    "health clinic in Sepang",
-    "klinik 24 jam in Sepang",
-    "specialist clinic in Sepang",
-    "klinik pakar in Sepang",
-    "family clinic in Sepang",
-    "klinik keluarga in Sepang",
-    "medical centre in Sepang",
-    "pusat perubatan in Sepang",
-    "child specialist clinic in Sepang",
-    "klinik kanak kanak in Sepang",
-    "women clinic in Sepang",
-    "klinik wanita in Sepang",
-    "physiotherapy in Sepang",
-    "fisioterapi in Sepang",
-    "diagnostic centre in Sepang",
-    "pusat diagnostik in Sepang",
-    "clinic in Putra Heights",
-    "klinik in Putra Heights",
-    "hospital in Putra Heights",
-    "medical clinic in Putra Heights",
-    "doctor in Putra Heights",
-    "dental clinic in Putra Heights",
-    "klinik gigi in Putra Heights",
-    "klinik kesihatan in Putra Heights",
-    "pharmacy in Putra Heights",
-    "health clinic in Putra Heights",
-    "klinik 24 jam in Putra Heights",
-    "specialist clinic in Putra Heights",
-    "klinik pakar in Putra Heights",
-    "family clinic in Putra Heights",
-    "klinik keluarga in Putra Heights",
-    "medical centre in Putra Heights",
-    "pusat perubatan in Putra Heights",
-    "child specialist clinic in Putra Heights",
-    "klinik kanak kanak in Putra Heights",
-    "women clinic in Putra Heights",
-    "klinik wanita in Putra Heights",
-    "physiotherapy in Putra Heights",
-    "fisioterapi in Putra Heights",
-    "diagnostic centre in Putra Heights",
-    "pusat diagnostik in Putra Heights",
-    "clinic in Subang Jaya",
-    "klinik in Subang Jaya",
-    "hospital in Subang Jaya",
-    "medical clinic in Subang Jaya",
-    "doctor in Subang Jaya",
-    "dental clinic in Subang Jaya",
-    "klinik gigi in Subang Jaya",
-    "klinik kesihatan in Subang Jaya",
-    "pharmacy in Subang Jaya",
-    "health clinic in Subang Jaya",
-    "klinik 24 jam in Subang Jaya",
-    "specialist clinic in Subang Jaya",
-    "klinik pakar in Subang Jaya",
-    "family clinic in Subang Jaya",
-    "klinik keluarga in Subang Jaya",
-    "medical centre in Subang Jaya",
-    "pusat perubatan in Subang Jaya",
-    "child specialist clinic in Subang Jaya",
-    "klinik kanak kanak in Subang Jaya",
-    "women clinic in Subang Jaya",
-    "klinik wanita in Subang Jaya",
-    "physiotherapy in Subang Jaya",
-    "fisioterapi in Subang Jaya",
-    "diagnostic centre in Subang Jaya",
-    "pusat diagnostik in Subang Jaya",
-    "clinic near 2.9221,101.6514",
-    "clinic near 2.9221,101.6514",
-    "clinic near 2.9221,101.6514",
-    "clinic near 2.9221,101.6514",
-    "clinic near 2.9313,101.6879",
-    "clinic near 2.9313,101.6879",
-    "clinic near 2.9313,101.6879",
-    "clinic near 2.9313,101.6879",
-    "clinic near 2.8730,101.6874",
-    "clinic near 2.8730,101.6874",
-    "clinic near 2.8730,101.6874",
-    "clinic near 2.8730,101.6874",
-    "clinic near 2.9031,101.7870",
-    "clinic near 2.9031,101.7870",
-    "clinic near 2.9031,101.7870",
-    "clinic near 2.9031,101.7870",
-    "clinic near 2.9930,101.7890",
-    "clinic near 2.9930,101.7890",
-    "clinic near 2.9930,101.7890",
-    "clinic near 2.9930,101.7890",
-    "clinic near 3.0063,101.7066",
-    "clinic near 3.0063,101.7066",
-    "clinic near 3.0063,101.7066",
-    "clinic near 3.0063,101.7066",
-    "clinic near 3.0253,101.6178",
-    "clinic near 3.0253,101.6178",
-    "clinic near 3.0253,101.6178",
-    "clinic near 3.0253,101.6178",
-    "clinic near 2.9761,101.7000",
-    "clinic near 2.9761,101.7000",
-    "clinic near 2.9761,101.7000",
-    "clinic near 2.9761,101.7000"
+    "restaurant in Cyberjaya",
+    "cafe in Cyberjaya",
+    "kopitiam in Cyberjaya",
+    "kedai makan in Cyberjaya",
+    "mamak in Cyberjaya",
+    "nasi kandar in Cyberjaya",
+    "coffee shop in Cyberjaya",
+    "bakery in Cyberjaya",
+    "western food in Cyberjaya",
+    "bubble tea in Cyberjaya",
+    "car workshop in Cyberjaya",
+    "kedai kereta in Cyberjaya",
+    "tyre shop in Cyberjaya",
+    "car wash in Cyberjaya",
+    "car detailing in Cyberjaya",
+    "motorcycle workshop in Cyberjaya",
+    "car service centre in Cyberjaya",
+    "bengkel kereta in Cyberjaya",
+    "car battery shop in Cyberjaya",
+    "car aircond service in Cyberjaya",
+    "restaurant in Putrajaya",
+    "cafe in Putrajaya",
+    "kopitiam in Putrajaya",
+    "kedai makan in Putrajaya",
+    "mamak in Putrajaya",
+    "nasi kandar in Putrajaya",
+    "coffee shop in Putrajaya",
+    "bakery in Putrajaya",
+    "western food in Putrajaya",
+    "bubble tea in Putrajaya",
+    "car workshop in Putrajaya",
+    "kedai kereta in Putrajaya",
+    "tyre shop in Putrajaya",
+    "car wash in Putrajaya",
+    "car detailing in Putrajaya",
+    "motorcycle workshop in Putrajaya",
+    "car service centre in Putrajaya",
+    "bengkel kereta in Putrajaya",
+    "car battery shop in Putrajaya",
+    "car aircond service in Putrajaya",
+    "restaurant in Bangi",
+    "cafe in Bangi",
+    "kopitiam in Bangi",
+    "kedai makan in Bangi",
+    "mamak in Bangi",
+    "nasi kandar in Bangi",
+    "coffee shop in Bangi",
+    "bakery in Bangi",
+    "western food in Bangi",
+    "bubble tea in Bangi",
+    "car workshop in Bangi",
+    "kedai kereta in Bangi",
+    "tyre shop in Bangi",
+    "car wash in Bangi",
+    "car detailing in Bangi",
+    "motorcycle workshop in Bangi",
+    "car service centre in Bangi",
+    "bengkel kereta in Bangi",
+    "car battery shop in Bangi",
+    "car aircond service in Bangi",
+    "restaurant in Kajang",
+    "cafe in Kajang",
+    "kopitiam in Kajang",
+    "kedai makan in Kajang",
+    "mamak in Kajang",
+    "nasi kandar in Kajang",
+    "coffee shop in Kajang",
+    "bakery in Kajang",
+    "western food in Kajang",
+    "bubble tea in Kajang",
+    "car workshop in Kajang",
+    "kedai kereta in Kajang",
+    "tyre shop in Kajang",
+    "car wash in Kajang",
+    "car detailing in Kajang",
+    "motorcycle workshop in Kajang",
+    "car service centre in Kajang",
+    "bengkel kereta in Kajang",
+    "car battery shop in Kajang",
+    "car aircond service in Kajang"
   ],
   "completed": {
-    "klinik in Putrajaya": {
-      "places": 146,
-      "reviews": 24790,
-      "time": "2026-06-05T07:50:00.051674",
-      "batch": 1
+    "western food in Putrajaya": {
+      "batch_places": 140,
+      "batch_reviews": 46027,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:29:25.339698",
+      "batch": 24
     },
-    "klinik 24 jam in Cyberjaya": {
-      "places": 146,
-      "reviews": 24790,
-      "time": "2026-06-05T07:50:00.051693",
-      "batch": 1
+    "kopitiam in Bangi": {
+      "batch_places": 140,
+      "batch_reviews": 46027,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:29:25.339719",
+      "batch": 24
     },
-    "klinik gigi in Cyberjaya": {
-      "places": 146,
-      "reviews": 24790,
-      "time": "2026-06-05T07:50:00.051697",
-      "batch": 1
+    "kedai makan in Bangi": {
+      "batch_places": 155,
+      "batch_reviews": 53151,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:38:17.129377",
+      "batch": 25
     },
-    "medical clinic in Putrajaya": {
-      "places": 97,
-      "reviews": 18307,
-      "time": "2026-06-05T07:54:46.962698",
-      "batch": 2
+    "kopitiam in Putrajaya": {
+      "batch_places": 155,
+      "batch_reviews": 53151,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:38:17.129397",
+      "batch": 25
     },
-    "klinik wanita in Cyberjaya": {
-      "places": 97,
-      "reviews": 18307,
-      "time": "2026-06-05T07:54:46.962717",
-      "batch": 2
+    "car service centre in Bangi": {
+      "batch_places": 204,
+      "batch_reviews": 21745,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:48:43.765965",
+      "batch": 26
     },
-    "klinik kanak kanak in Putrajaya": {
-      "places": 97,
-      "reviews": 18307,
-      "time": "2026-06-05T07:54:46.962721",
-      "batch": 2
+    "bubble tea in Kajang": {
+      "batch_places": 204,
+      "batch_reviews": 21745,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:48:43.765987",
+      "batch": 26
     },
-    "doctor in Cyberjaya": {
-      "places": 187,
-      "reviews": 26094,
-      "time": "2026-06-05T08:01:12.250979",
-      "batch": 3
+    "car aircond service in Kajang": {
+      "batch_places": 117,
+      "batch_reviews": 10343,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:56:07.651796",
+      "batch": 27
     },
-    "physiotherapy in Putrajaya": {
-      "places": 187,
-      "reviews": 26094,
-      "time": "2026-06-05T08:01:12.250994",
-      "batch": 3
+    "tyre shop in Cyberjaya": {
+      "batch_places": 117,
+      "batch_reviews": 10343,
+      "batch_query_count": 2,
+      "time": "2026-06-05T16:56:07.651830",
+      "batch": 27
     },
-    "family clinic in Putrajaya": {
-      "places": 187,
-      "reviews": 26094,
-      "time": "2026-06-05T08:01:12.250997",
-      "batch": 3
+    "motorcycle workshop in Putrajaya": {
+      "batch_places": 40,
+      "batch_reviews": 6816,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:00:52.576901",
+      "batch": 28
     },
-    "klinik pakar in Putrajaya": {
-      "places": 182,
-      "reviews": 21523,
-      "time": "2026-06-05T08:07:22.961117",
-      "batch": 4
+    "car battery shop in Cyberjaya": {
+      "batch_places": 40,
+      "batch_reviews": 6816,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:00:52.576920",
+      "batch": 28
     },
-    "klinik in Cyberjaya": {
-      "places": 182,
-      "reviews": 21523,
-      "time": "2026-06-05T08:07:22.961137",
-      "batch": 4
+    "car service centre in Putrajaya": {
+      "batch_places": 110,
+      "batch_reviews": 11099,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:07:59.222526",
+      "batch": 29
     },
-    "medical clinic in Cyberjaya": {
-      "places": 182,
-      "reviews": 21523,
-      "time": "2026-06-05T08:07:22.961141",
-      "batch": 4
+    "motorcycle workshop in Bangi": {
+      "batch_places": 110,
+      "batch_reviews": 11099,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:07:59.222546",
+      "batch": 29
     },
-    "pusat diagnostik in Putrajaya": {
-      "places": 71,
-      "reviews": 8678,
-      "time": "2026-06-05T08:10:57.213393",
-      "batch": 5
+    "car detailing in Putrajaya": {
+      "batch_places": 139,
+      "batch_reviews": 13195,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:15:59.292982",
+      "batch": 30
     },
-    "klinik keluarga in Cyberjaya": {
-      "places": 71,
-      "reviews": 8678,
-      "time": "2026-06-05T08:10:57.213414",
-      "batch": 5
+    "tyre shop in Kajang": {
+      "batch_places": 139,
+      "batch_reviews": 13195,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:15:59.293007",
+      "batch": 30
     },
-    "specialist clinic in Cyberjaya": {
-      "places": 71,
-      "reviews": 8678,
-      "time": "2026-06-05T08:10:57.213418",
-      "batch": 5
+    "restaurant in Putrajaya": {
+      "batch_places": 206,
+      "batch_reviews": 47228,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:25:42.272719",
+      "batch": 31
     },
-    "diagnostic centre in Putrajaya": {
-      "places": 90,
-      "reviews": 14608,
-      "time": "2026-06-05T08:15:21.314669",
-      "batch": 6
+    "car aircond service in Bangi": {
+      "batch_places": 206,
+      "batch_reviews": 47228,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:25:42.272738",
+      "batch": 31
     },
-    "klinik keluarga in Putrajaya": {
-      "places": 90,
-      "reviews": 14608,
-      "time": "2026-06-05T08:15:21.314688",
-      "batch": 6
+    "mamak in Kajang": {
+      "batch_places": 201,
+      "batch_reviews": 30317,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:35:03.075779",
+      "batch": 32
     },
-    "pusat diagnostik in Cyberjaya": {
-      "places": 90,
-      "reviews": 14608,
-      "time": "2026-06-05T08:15:21.314691",
-      "batch": 6
+    "tyre shop in Bangi": {
+      "batch_places": 201,
+      "batch_reviews": 30317,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:35:03.075801",
+      "batch": 32
     },
-    "dental clinic in Putrajaya": {
-      "places": 150,
-      "reviews": 20588,
-      "time": "2026-06-05T08:20:47.639225",
-      "batch": 7
+    "car wash in Bangi": {
+      "batch_places": 91,
+      "batch_reviews": 6698,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:40:07.470680",
+      "batch": 33
     },
-    "fisioterapi in Cyberjaya": {
-      "places": 150,
-      "reviews": 20588,
-      "time": "2026-06-05T08:20:47.639244",
-      "batch": 7
+    "car workshop in Putrajaya": {
+      "batch_places": 91,
+      "batch_reviews": 6698,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:40:07.470700",
+      "batch": 33
     },
-    "clinic in Cyberjaya": {
-      "places": 150,
-      "reviews": 20588,
-      "time": "2026-06-05T08:20:47.639247",
-      "batch": 7
+    "bengkel kereta in Bangi": {
+      "batch_places": 83,
+      "batch_reviews": 11128,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:45:57.709787",
+      "batch": 34
     },
-    "diagnostic centre in Cyberjaya": {
-      "places": 88,
-      "reviews": 10336,
-      "time": "2026-06-05T08:24:38.907738",
-      "batch": 8
+    "car battery shop in Bangi": {
+      "batch_places": 83,
+      "batch_reviews": 11128,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:45:57.709806",
+      "batch": 34
     },
-    "family clinic in Cyberjaya": {
-      "places": 88,
-      "reviews": 10336,
-      "time": "2026-06-05T08:24:38.907759",
-      "batch": 8
+    "cafe in Kajang": {
+      "batch_places": 41,
+      "batch_reviews": 17677,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:50:51.154038",
+      "batch": 35
     },
-    "women clinic in Putrajaya": {
-      "places": 88,
-      "reviews": 10336,
-      "time": "2026-06-05T08:24:38.907762",
-      "batch": 8
+    "kedai makan in Cyberjaya": {
+      "batch_places": 41,
+      "batch_reviews": 17677,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:50:51.154059",
+      "batch": 35
     },
-    "specialist clinic in Putrajaya": {
-      "places": 148,
-      "reviews": 20728,
-      "time": "2026-06-05T08:30:07.794591",
-      "batch": 9
+    "coffee shop in Cyberjaya": {
+      "batch_places": 176,
+      "batch_reviews": 32682,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:58:52.189998",
+      "batch": 36
     },
-    "klinik kesihatan in Cyberjaya": {
-      "places": 148,
-      "reviews": 20728,
-      "time": "2026-06-05T08:30:07.794609",
-      "batch": 9
+    "car aircond service in Cyberjaya": {
+      "batch_places": 176,
+      "batch_reviews": 32682,
+      "batch_query_count": 2,
+      "time": "2026-06-05T17:58:52.190017",
+      "batch": 36
     },
-    "physiotherapy in Cyberjaya": {
-      "places": 148,
-      "reviews": 20728,
-      "time": "2026-06-05T08:30:07.794612",
-      "batch": 9
+    "coffee shop in Kajang": {
+      "batch_places": 190,
+      "batch_reviews": 28606,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:07:57.357068",
+      "batch": 37
     },
-    "health clinic in Putrajaya": {
-      "places": 177,
-      "reviews": 24271,
-      "time": "2026-06-05T08:36:59.453400",
-      "batch": 10
+    "kopitiam in Kajang": {
+      "batch_places": 190,
+      "batch_reviews": 28606,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:07:57.357088",
+      "batch": 37
     },
-    "pusat perubatan in Cyberjaya": {
-      "places": 177,
-      "reviews": 24271,
-      "time": "2026-06-05T08:36:59.453421",
-      "batch": 10
+    "kedai makan in Kajang": {
+      "batch_places": 111,
+      "batch_reviews": 23232,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:14:52.839365",
+      "batch": 38
     },
-    "pharmacy in Cyberjaya": {
-      "places": 177,
-      "reviews": 24271,
-      "time": "2026-06-05T08:36:59.453425",
-      "batch": 10
+    "tyre shop in Putrajaya": {
+      "batch_places": 111,
+      "batch_reviews": 23232,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:14:52.839392",
+      "batch": 38
     },
-    "child specialist clinic in Cyberjaya": {
-      "places": 49,
-      "reviews": 7896,
-      "time": "2026-06-05T08:40:15.471586",
-      "batch": 11
+    "car battery shop in Putrajaya": {
+      "batch_places": 196,
+      "batch_reviews": 46506,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:24:01.110095",
+      "batch": 39
     },
-    "women clinic in Cyberjaya": {
-      "places": 49,
-      "reviews": 7896,
-      "time": "2026-06-05T08:40:15.471604",
-      "batch": 11
-    },
-    "hospital in Putrajaya": {
-      "places": 49,
-      "reviews": 7896,
-      "time": "2026-06-05T08:40:15.471607",
-      "batch": 11
-    },
-    "pharmacy in Putrajaya": {
-      "places": 256,
-      "reviews": 33943,
-      "time": "2026-06-05T08:48:42.437245",
-      "batch": 12
-    },
-    "clinic in Putrajaya": {
-      "places": 256,
-      "reviews": 33943,
-      "time": "2026-06-05T08:48:42.437267",
-      "batch": 12
-    },
-    "medical centre in Cyberjaya": {
-      "places": 256,
-      "reviews": 33943,
-      "time": "2026-06-05T08:48:42.437271",
-      "batch": 12
-    },
-    "klinik kesihatan in Putrajaya": {
-      "places": 86,
-      "reviews": 8737,
-      "time": "2026-06-05T08:52:58.369762",
-      "batch": 13
-    },
-    "klinik 24 jam in Putrajaya": {
-      "places": 86,
-      "reviews": 8737,
-      "time": "2026-06-05T08:52:58.369782",
-      "batch": 13
-    },
-    "fisioterapi in Putrajaya": {
-      "places": 86,
-      "reviews": 8737,
-      "time": "2026-06-05T08:52:58.369786",
-      "batch": 13
-    },
-    "hospital in Cyberjaya": {
-      "places": 92,
-      "reviews": 11906,
-      "time": "2026-06-05T08:57:59.919279",
-      "batch": 14
-    },
-    "medical centre in Putrajaya": {
-      "places": 92,
-      "reviews": 11906,
-      "time": "2026-06-05T08:57:59.919302",
-      "batch": 14
-    },
-    "klinik kanak kanak in Cyberjaya": {
-      "places": 92,
-      "reviews": 11906,
-      "time": "2026-06-05T08:57:59.919307",
-      "batch": 14
-    },
-    "klinik kesihatan in Seri Kembangan": {
-      "batch_places": 44,
-      "batch_reviews": 9761,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:40:42.034596",
-      "batch": 16
-    },
-    "dental clinic in Cyberjaya": {
-      "batch_places": 44,
-      "batch_reviews": 9761,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:40:42.034829",
-      "batch": 16
-    },
-    "child specialist clinic in Putrajaya": {
-      "batch_places": 44,
-      "batch_reviews": 9761,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:40:42.034842",
-      "batch": 16
-    },
-    "specialist clinic in Seri Kembangan": {
-      "batch_places": 177,
-      "batch_reviews": 31768,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:47:37.143838",
-      "batch": 17
-    },
-    "women clinic in Dengkil": {
-      "batch_places": 177,
-      "batch_reviews": 31768,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:47:37.143858",
-      "batch": 17
-    },
-    "klinik keluarga in Puchong": {
-      "batch_places": 177,
-      "batch_reviews": 31768,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:47:37.143862",
-      "batch": 17
-    },
-    "pusat perubatan in Sepang": {
-      "batch_places": 205,
-      "batch_reviews": 27608,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:55:07.642722",
-      "batch": 18
-    },
-    "medical centre in Subang Jaya": {
-      "batch_places": 205,
-      "batch_reviews": 27608,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:55:07.642745",
-      "batch": 18
-    },
-    "fisioterapi in Seri Kembangan": {
-      "batch_places": 205,
-      "batch_reviews": 27608,
-      "batch_query_count": 3,
-      "time": "2026-06-05T11:55:07.642749",
-      "batch": 18
-    },
-    "clinic near 2.9930,101.7890": {
-      "batch_places": 107,
-      "batch_reviews": 24930,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:00:45.933847",
-      "batch": 19
-    },
-    "child specialist clinic in Puchong": {
-      "batch_places": 107,
-      "batch_reviews": 24930,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:00:45.933871",
-      "batch": 19
-    },
-    "women clinic in Bandar Baru Bangi": {
-      "batch_places": 107,
-      "batch_reviews": 24930,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:00:45.933875",
-      "batch": 19
-    },
-    "physiotherapy in Bangi": {
-      "batch_places": 174,
-      "batch_reviews": 15046,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:07:01.769817",
-      "batch": 20
-    },
-    "physiotherapy in Bandar Baru Bangi": {
-      "batch_places": 174,
-      "batch_reviews": 15046,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:07:01.769838",
-      "batch": 20
-    },
-    "pusat perubatan in Dengkil": {
-      "batch_places": 174,
-      "batch_reviews": 15046,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:07:01.769842",
-      "batch": 20
-    },
-    "klinik wanita in Kajang": {
-      "batch_places": 248,
-      "batch_reviews": 43112,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:16:16.918139",
-      "batch": 21
-    },
-    "pusat perubatan in Seri Kembangan": {
-      "batch_places": 248,
-      "batch_reviews": 43112,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:16:16.918163",
-      "batch": 21
-    },
-    "klinik kanak kanak in Bangi": {
-      "batch_places": 248,
-      "batch_reviews": 43112,
-      "batch_query_count": 3,
-      "time": "2026-06-05T12:16:16.918167",
-      "batch": 21
-    },
-    "specialist clinic in Serdang": {
-      "batch_places": 245,
-      "batch_reviews": 50326,
-      "batch_query_count": 3,
-      "time": "2026-06-05T13:18:48.962864",
-      "batch": 23
-    },
-    "clinic near 3.0063,101.7066": {
-      "batch_places": 245,
-      "batch_reviews": 50326,
-      "batch_query_count": 3,
-      "time": "2026-06-05T13:18:48.962886",
-      "batch": 23
-    },
-    "women clinic in Subang Jaya": {
-      "batch_places": 245,
-      "batch_reviews": 50326,
-      "batch_query_count": 3,
-      "time": "2026-06-05T13:18:48.962891",
-      "batch": 23
+    "restaurant in Kajang": {
+      "batch_places": 196,
+      "batch_reviews": 46506,
+      "batch_query_count": 2,
+      "time": "2026-06-05T18:24:01.110128",
+      "batch": 39
     }
   },
-  "failed": {
-    "health clinic in Serdang": {
-      "attempts": 1,
-      "error": "No results returned"
-    },
-    "klinik gigi in Puchong": {
-      "attempts": 1,
-      "error": "No results returned"
-    },
-    "health clinic in Dengkil": {
-      "attempts": 1,
-      "error": "No results returned"
-    }
-  },
-  "batch_size": 3,
-  "delay_seconds": 120,
-  "total_places": 3019,
-  "total_reviews": 454956,
-  "last_updated": "2026-06-05T13:18:48.962989"
+  "failed": {},
+  "batch_size": 2,
+  "delay_seconds": 180,
+  "total_places": 2200,
+  "total_reviews": 406450,
+  "last_updated": "2026-06-05T18:24:01.110198"
 }

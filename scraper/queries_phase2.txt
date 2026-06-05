@@ -1,0 +1,120 @@
+# Google Maps Scraper Queries
+# Auto-generated: 116 queries
+# Lines starting with # are ignored
+
+restaurant in Petaling Jaya
+cafe in Petaling Jaya
+kopitiam in Petaling Jaya
+kedai makan in Petaling Jaya
+mamak in Petaling Jaya
+nasi kandar in Petaling Jaya
+coffee shop in Petaling Jaya
+bakery in Petaling Jaya
+western food in Petaling Jaya
+bubble tea in Petaling Jaya
+car workshop in Petaling Jaya
+kedai kereta in Petaling Jaya
+tyre shop in Petaling Jaya
+car wash in Petaling Jaya
+car detailing in Petaling Jaya
+motorcycle workshop in Petaling Jaya
+car service centre in Petaling Jaya
+bengkel kereta in Petaling Jaya
+car battery shop in Petaling Jaya
+car aircond service in Petaling Jaya
+hair salon in Petaling Jaya
+barbershop in Petaling Jaya
+kedai gunting rambut in Petaling Jaya
+spa in Petaling Jaya
+massage in Petaling Jaya
+beauty salon in Petaling Jaya
+facial in Petaling Jaya
+nail salon in Petaling Jaya
+urut in Petaling Jaya
+restaurant in Subang Jaya
+cafe in Subang Jaya
+kopitiam in Subang Jaya
+kedai makan in Subang Jaya
+mamak in Subang Jaya
+nasi kandar in Subang Jaya
+coffee shop in Subang Jaya
+bakery in Subang Jaya
+western food in Subang Jaya
+bubble tea in Subang Jaya
+car workshop in Subang Jaya
+kedai kereta in Subang Jaya
+tyre shop in Subang Jaya
+car wash in Subang Jaya
+car detailing in Subang Jaya
+motorcycle workshop in Subang Jaya
+car service centre in Subang Jaya
+bengkel kereta in Subang Jaya
+car battery shop in Subang Jaya
+car aircond service in Subang Jaya
+hair salon in Subang Jaya
+barbershop in Subang Jaya
+kedai gunting rambut in Subang Jaya
+spa in Subang Jaya
+massage in Subang Jaya
+beauty salon in Subang Jaya
+facial in Subang Jaya
+nail salon in Subang Jaya
+urut in Subang Jaya
+restaurant in Cheras
+cafe in Cheras
+kopitiam in Cheras
+kedai makan in Cheras
+mamak in Cheras
+nasi kandar in Cheras
+coffee shop in Cheras
+bakery in Cheras
+western food in Cheras
+bubble tea in Cheras
+car workshop in Cheras
+kedai kereta in Cheras
+tyre shop in Cheras
+car wash in Cheras
+car detailing in Cheras
+motorcycle workshop in Cheras
+car service centre in Cheras
+bengkel kereta in Cheras
+car battery shop in Cheras
+car aircond service in Cheras
+hair salon in Cheras
+barbershop in Cheras
+kedai gunting rambut in Cheras
+spa in Cheras
+massage in Cheras
+beauty salon in Cheras
+facial in Cheras
+nail salon in Cheras
+urut in Cheras
+restaurant in Bangsar
+cafe in Bangsar
+kopitiam in Bangsar
+kedai makan in Bangsar
+mamak in Bangsar
+nasi kandar in Bangsar
+coffee shop in Bangsar
+bakery in Bangsar
+western food in Bangsar
+bubble tea in Bangsar
+car workshop in Bangsar
+kedai kereta in Bangsar
+tyre shop in Bangsar
+car wash in Bangsar
+car detailing in Bangsar
+motorcycle workshop in Bangsar
+car service centre in Bangsar
+bengkel kereta in Bangsar
+car battery shop in Bangsar
+car aircond service in Bangsar
+hair salon in Bangsar
+barbershop in Bangsar
+kedai gunting rambut in Bangsar
+spa in Bangsar
+massage in Bangsar
+beauty salon in Bangsar
+facial in Bangsar
+nail salon in Bangsar
+urut in Bangsar
