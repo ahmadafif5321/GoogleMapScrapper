@@ -12,11 +12,8 @@ build/
 venv/
 env/
 
-# Data files (large)
-data/raw/*.json
-data/raw/*.csv
-data/processed/*.parquet
-data/processed/*.json
+# Data files (large/runtime)
+/data/
 
 # IDE
 .vscode/
@@ -46,3 +43,10 @@ gmaps-playwright-cache/
 # Logs
 *.log
 /tmp/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Scrape coordinator runtime files
+scraper/.scrape.lock
+scraper/.ondemand_priority

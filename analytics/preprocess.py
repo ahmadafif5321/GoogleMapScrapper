@@ -39,8 +39,14 @@ def clean_text(text: str) -> str:
     text = unicodedata.normalize("NFKD", text)
     text = re.sub(r"http\S+|www\S+|https\S+", "", text)
     text = re.sub(r"\S+@\S+", "", text)
-    text = re.sub(r"[^\w\s.,!?;:'\"\-()&%$#@\u0600-\u06ff\u0e00-\u0e7f]" +
-                  r"\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff\uac00-\ud7af", "", text)
+    # Keep word chars, whitespace, common punctuation, and Arabic/Thai/CJK/
+    # Japanese kana/Hangul ranges; strip everything else (emoji, symbols).
+    text = re.sub(
+        r"[^\w\s.,!?;:'\"\-()&%$#@"
+        r"\u0600-\u06ff\u0e00-\u0e7f\u4e00-\u9fff"
+        r"\u3040-\u309f\u30a0-\u30ff\uac00-\ud7af]",
+        "", text,
+    )
     text = re.sub(r"\s+", " ", text)
     text = text.strip()
 

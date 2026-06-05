@@ -185,24 +185,24 @@ def export_all_csv():
             adf.to_csv(acsv, index=False, encoding="utf-8-sig")
             print(f"[export] Aspect summary: {acsv}")
 
-    # Comparison CSV
-    comp = data.get("comparison_report", {}).get("rankings", {})
-    if comp:
-        crows = []
-        for place, c in comp.items():
-            crows.append({
-                "place_name": place,
-                "rank": c.get("rank", 0),
-                "sentiment_health_score": c.get("sentiment_health_score", 0),
-                "positive_pct": c.get("positive_pct", 0),
-                "negative_pct": c.get("negative_pct", 0),
-                "avg_rating": c.get("avg_rating", 0),
-                "total_reviews": c.get("total_reviews", 0),
-            })
-        cdf = pd.DataFrame(crows).sort_values("rank")
-        ccsv = PROCESSED_DIR / "comparison_ranking.csv"
-        cdf.to_csv(ccsv, index=False, encoding="utf-8-sig")
-        print(f"[export] Comparison: {ccsv}")
+        # Comparison CSV (only when an analysis JSON was loaded)
+        comp = (data.get("comparison_report") or {}).get("rankings", {})
+        if comp:
+            crows = []
+            for place, c in comp.items():
+                crows.append({
+                    "place_name": place,
+                    "rank": c.get("rank", 0),
+                    "sentiment_health_score": c.get("sentiment_health_score", 0),
+                    "positive_pct": c.get("positive_pct", 0),
+                    "negative_pct": c.get("negative_pct", 0),
+                    "avg_rating": c.get("avg_rating", 0),
+                    "total_reviews": c.get("total_reviews", 0),
+                })
+            cdf = pd.DataFrame(crows).sort_values("rank")
+            ccsv = PROCESSED_DIR / "comparison_ranking.csv"
+            cdf.to_csv(ccsv, index=False, encoding="utf-8-sig")
+            print(f"[export] Comparison: {ccsv}")
 
     print("[export] Done. All CSV files in data/processed/")
 
@@ -246,16 +246,23 @@ def run_batch(queries: List[str], batch_num: int, state: dict) -> bool:
         places_count = df["title"].nunique()
         reviews_count = len(reviews_df)
 
+        # Raw cumulative counters (may contain cross-batch duplicates;
+        # true unique totals come from merge_reviews()).
         state["total_places"] += places_count
         state["total_reviews"] += reviews_count
 
         for q in queries:
+            # Batch stats are shared across all queries in the batch —
+            # the scraper output cannot attribute places to individual queries.
             state["completed"][q] = {
-                "places": places_count,
-                "reviews": reviews_count,
+                "batch_places": places_count,
+                "batch_reviews": reviews_count,
+                "batch_query_count": len(queries),
                 "time": datetime.now().isoformat(),
                 "batch": batch_num,
             }
+            # A query that succeeds should no longer be marked failed.
+            state["failed"].pop(q, None)
 
         elapsed = time.time() - start
         print(f"[collector] Batch {batch_num} done: {places_count} places, "
@@ -274,9 +281,9 @@ def get_pending_queries(state: dict) -> List[str]:
     completed = set(state["completed"].keys())
     failed = set(state["failed"].keys())
 
-    # Retry failed queries up to 3 times
+    # Retry failed queries up to 3 times (never retry already-completed ones)
     retry_keys = []
-    for q in failed:
+    for q in failed - completed:
         fail_entry = state["failed"].get(q, "")
         if isinstance(fail_entry, dict):
             attempts = fail_entry.get("attempts", 1)
@@ -285,7 +292,7 @@ def get_pending_queries(state: dict) -> List[str]:
         if attempts < 3:
             retry_keys.append(q)
 
-    pending = list(all_queries - completed) + retry_keys
+    pending = list(all_queries - completed - failed) + retry_keys
     return pending
 
 
@@ -350,7 +357,14 @@ def run_collector(
         print(f"  CYCLE {cycle}")
         print(f"{'#'*60}")
 
-        batch_num = 1
+        # Continue batch numbering after existing files so old raw batches
+        # are never overwritten across runs/cycles.
+        existing_batches = [
+            int(p.stem.split("_")[1])
+            for p in RAW_DIR.glob("batch_*.json")
+            if p.stem.split("_")[1].isdigit()
+        ]
+        batch_num = max(existing_batches, default=0) + 1
         consecutive_failures = 0
 
         while True:
@@ -364,12 +378,22 @@ def run_collector(
                 print(f"\n[collector] Reached max_batches={max_batches}. Stopping.")
                 break
 
+            # Yield the scraper engine to any live on-demand capture first.
+            try:
+                from scraper.scrape_coord import wait_if_yield, collector_scrape
+                wait_if_yield()
+            except Exception:
+                collector_scrape = None  # coordinator unavailable -> run normally
+
             # Take next batch
             batch_queries = pending[:batch_size]
             print(f"\n[collector] Pending: {len(pending)} queries, "
                   f"completed: {len(state['completed'])}, failed: {len(state['failed'])}")
 
-            success = run_batch(batch_queries, batch_num, state)
+            if collector_scrape:
+                success = collector_scrape(run_batch, batch_queries, batch_num, state)
+            else:
+                success = run_batch(batch_queries, batch_num, state)
 
             if success:
                 consecutive_failures = 0

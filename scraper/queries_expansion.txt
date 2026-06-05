@@ -1,0 +1,688 @@
+# Google Maps Scraper Queries
+# Auto-generated: 684 queries
+# Lines starting with # are ignored
+
+restaurant in Cyberjaya
+cafe in Cyberjaya
+kopitiam in Cyberjaya
+kedai makan in Cyberjaya
+mamak in Cyberjaya
+nasi kandar in Cyberjaya
+coffee shop in Cyberjaya
+bakery in Cyberjaya
+western food in Cyberjaya
+bubble tea in Cyberjaya
+restaurant in Putrajaya
+cafe in Putrajaya
+kopitiam in Putrajaya
+kedai makan in Putrajaya
+mamak in Putrajaya
+nasi kandar in Putrajaya
+coffee shop in Putrajaya
+bakery in Putrajaya
+western food in Putrajaya
+bubble tea in Putrajaya
+restaurant in Dengkil
+cafe in Dengkil
+kopitiam in Dengkil
+kedai makan in Dengkil
+mamak in Dengkil
+nasi kandar in Dengkil
+coffee shop in Dengkil
+bakery in Dengkil
+western food in Dengkil
+bubble tea in Dengkil
+restaurant in Bangi
+cafe in Bangi
+kopitiam in Bangi
+kedai makan in Bangi
+mamak in Bangi
+nasi kandar in Bangi
+coffee shop in Bangi
+bakery in Bangi
+western food in Bangi
+bubble tea in Bangi
+restaurant in Kajang
+cafe in Kajang
+kopitiam in Kajang
+kedai makan in Kajang
+mamak in Kajang
+nasi kandar in Kajang
+coffee shop in Kajang
+bakery in Kajang
+western food in Kajang
+bubble tea in Kajang
+restaurant in Seri Kembangan
+cafe in Seri Kembangan
+kopitiam in Seri Kembangan
+kedai makan in Seri Kembangan
+mamak in Seri Kembangan
+nasi kandar in Seri Kembangan
+coffee shop in Seri Kembangan
+bakery in Seri Kembangan
+western food in Seri Kembangan
+bubble tea in Seri Kembangan
+restaurant in Puchong
+cafe in Puchong
+kopitiam in Puchong
+kedai makan in Puchong
+mamak in Puchong
+nasi kandar in Puchong
+coffee shop in Puchong
+bakery in Puchong
+western food in Puchong
+bubble tea in Puchong
+restaurant in Serdang
+cafe in Serdang
+kopitiam in Serdang
+kedai makan in Serdang
+mamak in Serdang
+nasi kandar in Serdang
+coffee shop in Serdang
+bakery in Serdang
+western food in Serdang
+bubble tea in Serdang
+restaurant in Bandar Baru Bangi
+cafe in Bandar Baru Bangi
+kopitiam in Bandar Baru Bangi
+kedai makan in Bandar Baru Bangi
+mamak in Bandar Baru Bangi
+nasi kandar in Bandar Baru Bangi
+coffee shop in Bandar Baru Bangi
+bakery in Bandar Baru Bangi
+western food in Bandar Baru Bangi
+bubble tea in Bandar Baru Bangi
+restaurant in Sepang
+cafe in Sepang
+kopitiam in Sepang
+kedai makan in Sepang
+mamak in Sepang
+nasi kandar in Sepang
+coffee shop in Sepang
+bakery in Sepang
+western food in Sepang
+bubble tea in Sepang
+restaurant in Putra Heights
+cafe in Putra Heights
+kopitiam in Putra Heights
+kedai makan in Putra Heights
+mamak in Putra Heights
+nasi kandar in Putra Heights
+coffee shop in Putra Heights
+bakery in Putra Heights
+western food in Putra Heights
+bubble tea in Putra Heights
+restaurant in Subang Jaya
+cafe in Subang Jaya
+kopitiam in Subang Jaya
+kedai makan in Subang Jaya
+mamak in Subang Jaya
+nasi kandar in Subang Jaya
+coffee shop in Subang Jaya
+bakery in Subang Jaya
+western food in Subang Jaya
+bubble tea in Subang Jaya
+car workshop in Cyberjaya
+kedai kereta in Cyberjaya
+tyre shop in Cyberjaya
+car wash in Cyberjaya
+car detailing in Cyberjaya
+motorcycle workshop in Cyberjaya
+car service centre in Cyberjaya
+bengkel kereta in Cyberjaya
+car battery shop in Cyberjaya
+car aircond service in Cyberjaya
+car workshop in Putrajaya
+kedai kereta in Putrajaya
+tyre shop in Putrajaya
+car wash in Putrajaya
+car detailing in Putrajaya
+motorcycle workshop in Putrajaya
+car service centre in Putrajaya
+bengkel kereta in Putrajaya
+car battery shop in Putrajaya
+car aircond service in Putrajaya
+car workshop in Dengkil
+kedai kereta in Dengkil
+tyre shop in Dengkil
+car wash in Dengkil
+car detailing in Dengkil
+motorcycle workshop in Dengkil
+car service centre in Dengkil
+bengkel kereta in Dengkil
+car battery shop in Dengkil
+car aircond service in Dengkil
+car workshop in Bangi
+kedai kereta in Bangi
+tyre shop in Bangi
+car wash in Bangi
+car detailing in Bangi
+motorcycle workshop in Bangi
+car service centre in Bangi
+bengkel kereta in Bangi
+car battery shop in Bangi
+car aircond service in Bangi
+car workshop in Kajang
+kedai kereta in Kajang
+tyre shop in Kajang
+car wash in Kajang
+car detailing in Kajang
+motorcycle workshop in Kajang
+car service centre in Kajang
+bengkel kereta in Kajang
+car battery shop in Kajang
+car aircond service in Kajang
+car workshop in Seri Kembangan
+kedai kereta in Seri Kembangan
+tyre shop in Seri Kembangan
+car wash in Seri Kembangan
+car detailing in Seri Kembangan
+motorcycle workshop in Seri Kembangan
+car service centre in Seri Kembangan
+bengkel kereta in Seri Kembangan
+car battery shop in Seri Kembangan
+car aircond service in Seri Kembangan
+car workshop in Puchong
+kedai kereta in Puchong
+tyre shop in Puchong
+car wash in Puchong
+car detailing in Puchong
+motorcycle workshop in Puchong
+car service centre in Puchong
+bengkel kereta in Puchong
+car battery shop in Puchong
+car aircond service in Puchong
+car workshop in Serdang
+kedai kereta in Serdang
+tyre shop in Serdang
+car wash in Serdang
+car detailing in Serdang
+motorcycle workshop in Serdang
+car service centre in Serdang
+bengkel kereta in Serdang
+car battery shop in Serdang
+car aircond service in Serdang
+car workshop in Bandar Baru Bangi
+kedai kereta in Bandar Baru Bangi
+tyre shop in Bandar Baru Bangi
+car wash in Bandar Baru Bangi
+car detailing in Bandar Baru Bangi
+motorcycle workshop in Bandar Baru Bangi
+car service centre in Bandar Baru Bangi
+bengkel kereta in Bandar Baru Bangi
+car battery shop in Bandar Baru Bangi
+car aircond service in Bandar Baru Bangi
+car workshop in Sepang
+kedai kereta in Sepang
+tyre shop in Sepang
+car wash in Sepang
+car detailing in Sepang
+motorcycle workshop in Sepang
+car service centre in Sepang
+bengkel kereta in Sepang
+car battery shop in Sepang
+car aircond service in Sepang
+car workshop in Putra Heights
+kedai kereta in Putra Heights
+tyre shop in Putra Heights
+car wash in Putra Heights
+car detailing in Putra Heights
+motorcycle workshop in Putra Heights
+car service centre in Putra Heights
+bengkel kereta in Putra Heights
+car battery shop in Putra Heights
+car aircond service in Putra Heights
+car workshop in Subang Jaya
+kedai kereta in Subang Jaya
+tyre shop in Subang Jaya
+car wash in Subang Jaya
+car detailing in Subang Jaya
+motorcycle workshop in Subang Jaya
+car service centre in Subang Jaya
+bengkel kereta in Subang Jaya
+car battery shop in Subang Jaya
+car aircond service in Subang Jaya
+hair salon in Cyberjaya
+barbershop in Cyberjaya
+kedai gunting rambut in Cyberjaya
+spa in Cyberjaya
+massage in Cyberjaya
+beauty salon in Cyberjaya
+facial in Cyberjaya
+nail salon in Cyberjaya
+urut in Cyberjaya
+hair salon in Putrajaya
+barbershop in Putrajaya
+kedai gunting rambut in Putrajaya
+spa in Putrajaya
+massage in Putrajaya
+beauty salon in Putrajaya
+facial in Putrajaya
+nail salon in Putrajaya
+urut in Putrajaya
+hair salon in Dengkil
+barbershop in Dengkil
+kedai gunting rambut in Dengkil
+spa in Dengkil
+massage in Dengkil
+beauty salon in Dengkil
+facial in Dengkil
+nail salon in Dengkil
+urut in Dengkil
+hair salon in Bangi
+barbershop in Bangi
+kedai gunting rambut in Bangi
+spa in Bangi
+massage in Bangi
+beauty salon in Bangi
+facial in Bangi
+nail salon in Bangi
+urut in Bangi
+hair salon in Kajang
+barbershop in Kajang
+kedai gunting rambut in Kajang
+spa in Kajang
+massage in Kajang
+beauty salon in Kajang
+facial in Kajang
+nail salon in Kajang
+urut in Kajang
+hair salon in Seri Kembangan
+barbershop in Seri Kembangan
+kedai gunting rambut in Seri Kembangan
+spa in Seri Kembangan
+massage in Seri Kembangan
+beauty salon in Seri Kembangan
+facial in Seri Kembangan
+nail salon in Seri Kembangan
+urut in Seri Kembangan
+hair salon in Puchong
+barbershop in Puchong
+kedai gunting rambut in Puchong
+spa in Puchong
+massage in Puchong
+beauty salon in Puchong
+facial in Puchong
+nail salon in Puchong
+urut in Puchong
+hair salon in Serdang
+barbershop in Serdang
+kedai gunting rambut in Serdang
+spa in Serdang
+massage in Serdang
+beauty salon in Serdang
+facial in Serdang
+nail salon in Serdang
+urut in Serdang
+hair salon in Bandar Baru Bangi
+barbershop in Bandar Baru Bangi
+kedai gunting rambut in Bandar Baru Bangi
+spa in Bandar Baru Bangi
+massage in Bandar Baru Bangi
+beauty salon in Bandar Baru Bangi
+facial in Bandar Baru Bangi
+nail salon in Bandar Baru Bangi
+urut in Bandar Baru Bangi
+hair salon in Sepang
+barbershop in Sepang
+kedai gunting rambut in Sepang
+spa in Sepang
+massage in Sepang
+beauty salon in Sepang
+facial in Sepang
+nail salon in Sepang
+urut in Sepang
+hair salon in Putra Heights
+barbershop in Putra Heights
+kedai gunting rambut in Putra Heights
+spa in Putra Heights
+massage in Putra Heights
+beauty salon in Putra Heights
+facial in Putra Heights
+nail salon in Putra Heights
+urut in Putra Heights
+hair salon in Subang Jaya
+barbershop in Subang Jaya
+kedai gunting rambut in Subang Jaya
+spa in Subang Jaya
+massage in Subang Jaya
+beauty salon in Subang Jaya
+facial in Subang Jaya
+nail salon in Subang Jaya
+urut in Subang Jaya
+hotel in Cyberjaya
+homestay in Cyberjaya
+budget hotel in Cyberjaya
+guest house in Cyberjaya
+resort in Cyberjaya
+hotel in Putrajaya
+homestay in Putrajaya
+budget hotel in Putrajaya
+guest house in Putrajaya
+resort in Putrajaya
+hotel in Dengkil
+homestay in Dengkil
+budget hotel in Dengkil
+guest house in Dengkil
+resort in Dengkil
+hotel in Bangi
+homestay in Bangi
+budget hotel in Bangi
+guest house in Bangi
+resort in Bangi
+hotel in Kajang
+homestay in Kajang
+budget hotel in Kajang
+guest house in Kajang
+resort in Kajang
+hotel in Seri Kembangan
+homestay in Seri Kembangan
+budget hotel in Seri Kembangan
+guest house in Seri Kembangan
+resort in Seri Kembangan
+hotel in Puchong
+homestay in Puchong
+budget hotel in Puchong
+guest house in Puchong
+resort in Puchong
+hotel in Serdang
+homestay in Serdang
+budget hotel in Serdang
+guest house in Serdang
+resort in Serdang
+hotel in Bandar Baru Bangi
+homestay in Bandar Baru Bangi
+budget hotel in Bandar Baru Bangi
+guest house in Bandar Baru Bangi
+resort in Bandar Baru Bangi
+hotel in Sepang
+homestay in Sepang
+budget hotel in Sepang
+guest house in Sepang
+resort in Sepang
+hotel in Putra Heights
+homestay in Putra Heights
+budget hotel in Putra Heights
+guest house in Putra Heights
+resort in Putra Heights
+hotel in Subang Jaya
+homestay in Subang Jaya
+budget hotel in Subang Jaya
+guest house in Subang Jaya
+resort in Subang Jaya
+mini market in Cyberjaya
+grocery store in Cyberjaya
+pharmacy in Cyberjaya
+hardware shop in Cyberjaya
+pet shop in Cyberjaya
+mobile phone shop in Cyberjaya
+mini market in Putrajaya
+grocery store in Putrajaya
+pharmacy in Putrajaya
+hardware shop in Putrajaya
+pet shop in Putrajaya
+mobile phone shop in Putrajaya
+mini market in Dengkil
+grocery store in Dengkil
+pharmacy in Dengkil
+hardware shop in Dengkil
+pet shop in Dengkil
+mobile phone shop in Dengkil
+mini market in Bangi
+grocery store in Bangi
+pharmacy in Bangi
+hardware shop in Bangi
+pet shop in Bangi
+mobile phone shop in Bangi
+mini market in Kajang
+grocery store in Kajang
+pharmacy in Kajang
+hardware shop in Kajang
+pet shop in Kajang
+mobile phone shop in Kajang
+mini market in Seri Kembangan
+grocery store in Seri Kembangan
+pharmacy in Seri Kembangan
+hardware shop in Seri Kembangan
+pet shop in Seri Kembangan
+mobile phone shop in Seri Kembangan
+mini market in Puchong
+grocery store in Puchong
+pharmacy in Puchong
+hardware shop in Puchong
+pet shop in Puchong
+mobile phone shop in Puchong
+mini market in Serdang
+grocery store in Serdang
+pharmacy in Serdang
+hardware shop in Serdang
+pet shop in Serdang
+mobile phone shop in Serdang
+mini market in Bandar Baru Bangi
+grocery store in Bandar Baru Bangi
+pharmacy in Bandar Baru Bangi
+hardware shop in Bandar Baru Bangi
+pet shop in Bandar Baru Bangi
+mobile phone shop in Bandar Baru Bangi
+mini market in Sepang
+grocery store in Sepang
+pharmacy in Sepang
+hardware shop in Sepang
+pet shop in Sepang
+mobile phone shop in Sepang
+mini market in Putra Heights
+grocery store in Putra Heights
+pharmacy in Putra Heights
+hardware shop in Putra Heights
+pet shop in Putra Heights
+mobile phone shop in Putra Heights
+mini market in Subang Jaya
+grocery store in Subang Jaya
+pharmacy in Subang Jaya
+hardware shop in Subang Jaya
+pet shop in Subang Jaya
+mobile phone shop in Subang Jaya
+tuition centre in Cyberjaya
+tadika in Cyberjaya
+kindergarten in Cyberjaya
+daycare in Cyberjaya
+driving school in Cyberjaya
+music school in Cyberjaya
+tuition centre in Putrajaya
+tadika in Putrajaya
+kindergarten in Putrajaya
+daycare in Putrajaya
+driving school in Putrajaya
+music school in Putrajaya
+tuition centre in Dengkil
+tadika in Dengkil
+kindergarten in Dengkil
+daycare in Dengkil
+driving school in Dengkil
+music school in Dengkil
+tuition centre in Bangi
+tadika in Bangi
+kindergarten in Bangi
+daycare in Bangi
+driving school in Bangi
+music school in Bangi
+tuition centre in Kajang
+tadika in Kajang
+kindergarten in Kajang
+daycare in Kajang
+driving school in Kajang
+music school in Kajang
+tuition centre in Seri Kembangan
+tadika in Seri Kembangan
+kindergarten in Seri Kembangan
+daycare in Seri Kembangan
+driving school in Seri Kembangan
+music school in Seri Kembangan
+tuition centre in Puchong
+tadika in Puchong
+kindergarten in Puchong
+daycare in Puchong
+driving school in Puchong
+music school in Puchong
+tuition centre in Serdang
+tadika in Serdang
+kindergarten in Serdang
+daycare in Serdang
+driving school in Serdang
+music school in Serdang
+tuition centre in Bandar Baru Bangi
+tadika in Bandar Baru Bangi
+kindergarten in Bandar Baru Bangi
+daycare in Bandar Baru Bangi
+driving school in Bandar Baru Bangi
+music school in Bandar Baru Bangi
+tuition centre in Sepang
+tadika in Sepang
+kindergarten in Sepang
+daycare in Sepang
+driving school in Sepang
+music school in Sepang
+tuition centre in Putra Heights
+tadika in Putra Heights
+kindergarten in Putra Heights
+daycare in Putra Heights
+driving school in Putra Heights
+music school in Putra Heights
+tuition centre in Subang Jaya
+tadika in Subang Jaya
+kindergarten in Subang Jaya
+daycare in Subang Jaya
+driving school in Subang Jaya
+music school in Subang Jaya
+gym in Cyberjaya
+fitness centre in Cyberjaya
+badminton court in Cyberjaya
+futsal court in Cyberjaya
+yoga studio in Cyberjaya
+gym in Putrajaya
+fitness centre in Putrajaya
+badminton court in Putrajaya
+futsal court in Putrajaya
+yoga studio in Putrajaya
+gym in Dengkil
+fitness centre in Dengkil
+badminton court in Dengkil
+futsal court in Dengkil
+yoga studio in Dengkil
+gym in Bangi
+fitness centre in Bangi
+badminton court in Bangi
+futsal court in Bangi
+yoga studio in Bangi
+gym in Kajang
+fitness centre in Kajang
+badminton court in Kajang
+futsal court in Kajang
+yoga studio in Kajang
+gym in Seri Kembangan
+fitness centre in Seri Kembangan
+badminton court in Seri Kembangan
+futsal court in Seri Kembangan
+yoga studio in Seri Kembangan
+gym in Puchong
+fitness centre in Puchong
+badminton court in Puchong
+futsal court in Puchong
+yoga studio in Puchong
+gym in Serdang
+fitness centre in Serdang
+badminton court in Serdang
+futsal court in Serdang
+yoga studio in Serdang
+gym in Bandar Baru Bangi
+fitness centre in Bandar Baru Bangi
+badminton court in Bandar Baru Bangi
+futsal court in Bandar Baru Bangi
+yoga studio in Bandar Baru Bangi
+gym in Sepang
+fitness centre in Sepang
+badminton court in Sepang
+futsal court in Sepang
+yoga studio in Sepang
+gym in Putra Heights
+fitness centre in Putra Heights
+badminton court in Putra Heights
+futsal court in Putra Heights
+yoga studio in Putra Heights
+gym in Subang Jaya
+fitness centre in Subang Jaya
+badminton court in Subang Jaya
+futsal court in Subang Jaya
+yoga studio in Subang Jaya
+laundry in Cyberjaya
+dobi in Cyberjaya
+aircond service in Cyberjaya
+renovation contractor in Cyberjaya
+printing shop in Cyberjaya
+photography studio in Cyberjaya
+laundry in Putrajaya
+dobi in Putrajaya
+aircond service in Putrajaya
+renovation contractor in Putrajaya
+printing shop in Putrajaya
+photography studio in Putrajaya
+laundry in Dengkil
+dobi in Dengkil
+aircond service in Dengkil
+renovation contractor in Dengkil
+printing shop in Dengkil
+photography studio in Dengkil
+laundry in Bangi
+dobi in Bangi
+aircond service in Bangi
+renovation contractor in Bangi
+printing shop in Bangi
+photography studio in Bangi
+laundry in Kajang
+dobi in Kajang
+aircond service in Kajang
+renovation contractor in Kajang
+printing shop in Kajang
+photography studio in Kajang
+laundry in Seri Kembangan
+dobi in Seri Kembangan
+aircond service in Seri Kembangan
+renovation contractor in Seri Kembangan
+printing shop in Seri Kembangan
+photography studio in Seri Kembangan
+laundry in Puchong
+dobi in Puchong
+aircond service in Puchong
+renovation contractor in Puchong
+printing shop in Puchong
+photography studio in Puchong
+laundry in Serdang
+dobi in Serdang
+aircond service in Serdang
+renovation contractor in Serdang
+printing shop in Serdang
+photography studio in Serdang
+laundry in Bandar Baru Bangi
+dobi in Bandar Baru Bangi
+aircond service in Bandar Baru Bangi
+renovation contractor in Bandar Baru Bangi
+printing shop in Bandar Baru Bangi
+photography studio in Bandar Baru Bangi
+laundry in Sepang
+dobi in Sepang
+aircond service in Sepang
+renovation contractor in Sepang
+printing shop in Sepang
+photography studio in Sepang
+laundry in Putra Heights
+dobi in Putra Heights
+aircond service in Putra Heights
+renovation contractor in Putra Heights
+printing shop in Putra Heights
+photography studio in Putra Heights
+laundry in Subang Jaya
+dobi in Subang Jaya
+aircond service in Subang Jaya
+renovation contractor in Subang Jaya
+printing shop in Subang Jaya
+photography studio in Subang Jaya

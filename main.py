@@ -219,8 +219,8 @@ def cmd_stats(args):
         print(f"Total queries: {len(state.get('queries', []))}")
         print(f"Completed: {len(state.get('completed', {}))}")
         print(f"Failed: {len(state.get('failed', {}))}")
-        print(f"Places collected: {state.get('total_places', 0)}")
-        print(f"Reviews collected: {state.get('total_reviews', 0)}")
+        print(f"Raw places collected: {state.get('total_places', 0)} (may include cross-batch duplicates)")
+        print(f"Raw reviews collected: {state.get('total_reviews', 0)} (true unique totals in Merged Dataset below)")
         print(f"Last updated: {state.get('last_updated', 'never')}")
     else:
         print("[stats] No collector state found. Run 'python main.py collect' first.")
@@ -239,36 +239,6 @@ def cmd_stats(args):
             print(f"  {place}: {cnt}")
     else:
         print("\n[stats] No merged dataset yet. It merges automatically every 10 batches.")
-    """Run the complete pipeline: scrape + analyze."""
-    from scraper.run_scraper import scrape_and_get_reviews
-    from analytics.pipeline import AnalyticsPipeline
-
-    queries = args.queries
-    if not queries:
-        print("ERROR: At least one search query is required.")
-        sys.exit(1)
-
-    output_name = args.output or "results"
-    method = args.sentiment_method or "transformer"
-
-    print(f"\n{'='*60}")
-    print(f"  FULL PIPELINE: Scrape + Analyze")
-    print(f"  Queries: {queries}")
-    print(f"  Sentiment: {method}")
-    print(f"{'='*60}\n")
-
-    reviews_df = scrape_and_get_reviews(queries, output_name)
-
-    if reviews_df is None or reviews_df.empty:
-        print("\n❌ Scraping failed. Stopping.")
-        sys.exit(1)
-
-    print("\n✅ Scraping done. Running analytics...\n")
-    pipeline = AnalyticsPipeline(reviews_df, output_prefix=output_name)
-    pipeline.run(sentiment_method=method)
-
-    print(f"\n✅ Full pipeline complete!")
-    print(f"Launch dashboard with: python main.py dashboard")
 
 
 def main():
@@ -317,10 +287,10 @@ Examples:
     collect_parser = subparsers.add_parser("collect", help="Run continuous collector (hours/days)")
     collect_parser.add_argument("-q", "--queries-file", default="scraper/queries.txt",
                                 help="Path to queries file (one per line)")
-    collect_parser.add_argument("-b", "--batch-size", type=int, default=3,
-                                help="Queries per batch (default: 3)")
-    collect_parser.add_argument("-d", "--delay", type=int, default=120,
-                                help="Seconds between batches (default: 120)")
+    collect_parser.add_argument("-b", "--batch-size", type=int, default=2,
+                                help="Queries per batch (default: 2, conservative)")
+    collect_parser.add_argument("-d", "--delay", type=int, default=180,
+                                help="Seconds between batches (default: 180, conservative)")
     collect_parser.add_argument("-m", "--max-batches", type=int, default=0,
                                 help="Max batches to run (0=unlimited)")
     collect_parser.add_argument("--continuous", action="store_true",

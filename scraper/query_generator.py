@@ -134,14 +134,75 @@ def generate_max_coverage(area_center: str = "Cyberjaya", radius_km: int = 30):
         "2.9761,101.7000",  # Serdang
     ]
 
+    # One geo-targeted query per center using the Google Maps "@lat,lon,zoom" syntax
+    # (the previous radius loop produced 4 identical strings per center).
     for geo in geo_centers:
-        for radius in [5000, 10000, 20000, 50000]:
-            queries.append(f"clinic near {geo.split(',')[0]},{geo.split(',')[1]}")
+        lat, lon = geo.split(",")
+        queries.append(f"clinic @{lat},{lon},14z")
 
-    return queries
+    # De-duplicate while preserving order
+    seen = set()
+    unique_queries = []
+    for q in queries:
+        if q not in seen:
+            seen.add(q)
+            unique_queries.append(q)
+
+    return unique_queries
+
+
+NICHE_KEYWORDS = {
+    "fnb": ["restaurant", "cafe", "kopitiam", "kedai makan", "mamak",
+            "nasi kandar", "coffee shop", "bakery", "western food", "bubble tea"],
+    "automotive": ["car workshop", "kedai kereta", "tyre shop", "car wash",
+                   "car detailing", "motorcycle workshop", "car service centre",
+                   "bengkel kereta", "car battery shop", "car aircond service"],
+    "beauty": ["hair salon", "barbershop", "kedai gunting rambut", "spa",
+               "massage", "beauty salon", "facial", "nail salon", "urut"],
+    "hotel": ["hotel", "homestay", "budget hotel", "guest house", "resort"],
+    "retail": ["mini market", "grocery store", "pharmacy", "hardware shop",
+               "pet shop", "mobile phone shop"],
+    "education": ["tuition centre", "tadika", "kindergarten", "daycare",
+                  "driving school", "music school"],
+    "fitness": ["gym", "fitness centre", "badminton court", "futsal court",
+                "yoga studio"],
+    "services": ["laundry", "dobi", "aircond service", "renovation contractor",
+                 "printing shop", "photography studio"],
+}
+
+DEFAULT_AREAS = [
+    "Cyberjaya", "Putrajaya", "Dengkil", "Bangi", "Kajang",
+    "Seri Kembangan", "Puchong", "Serdang", "Bandar Baru Bangi",
+    "Sepang", "Putra Heights", "Subang Jaya",
+]
+
+
+def generate_expansion_queries(niches: list[str] | None = None,
+                               areas: list[str] | None = None) -> list[str]:
+    """Multi-niche expansion pack: every niche keyword x every area."""
+    niches = niches or list(NICHE_KEYWORDS.keys())
+    areas = areas or DEFAULT_AREAS
+    queries = []
+    for niche in niches:
+        queries.extend(generate_area_variations(NICHE_KEYWORDS[niche], areas))
+    # de-dup preserving order
+    seen, out = set(), []
+    for q in queries:
+        if q not in seen:
+            seen.add(q)
+            out.append(q)
+    return out
 
 
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "expansion":
+        queries = generate_expansion_queries()
+        write_queries_file(queries,
+                           Path(__file__).resolve().parent / "queries_expansion.txt")
+        print(f"Generated {len(queries)} expansion queries "
+              f"({len(NICHE_KEYWORDS)} niches x {len(DEFAULT_AREAS)} areas).")
+        sys.exit(0)
     queries = generate_max_coverage()
     write_queries_file(queries)
     print(f"Generated {len(queries)} queries.")
