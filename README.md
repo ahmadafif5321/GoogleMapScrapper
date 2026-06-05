@@ -1,12 +1,13 @@
 # 🗺️ Google Maps Review Intelligence Platform
 
-> **Scrape thousands of Google Maps reviews → NLP sentiment & topic analysis → 6-page interactive dashboard → Actionable business insights**
+> **Scrape thousands of Google Maps reviews → NLP sentiment & topic analysis → 8-page animated dashboard → Actionable business insights**
 >
-> *Bilingual ◆ Batch-collected 450K+ reviews across 12 cities ◆ 3,000+ places ◆ 3,200 lines of Python ◆ 1.1GB of real analytics data*
+> *Bilingual ◆ Batch-collected 450K+ reviews across 12 cities ◆ 3,000+ places ◆ 3,500 lines of Python ◆ 1.1GB of real analytics data*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-required-2496ED?logo=docker)](https://docker.com)
+[![Streamlit](https://img.shields.io/badge/Streamlit-v2.0-FF4B4B?logo=streamlit)](https://streamlit.io)
 
 ---
 
@@ -16,8 +17,8 @@
 |-------|------|--------|
 | **Collect** | Docker scraper engine, batch scheduler | 450K+ reviews from 3,000+ places |
 | **Analyze** | XLM-RoBERTa sentiment, LDA topics, KeyBERT keywords | Sentiment scores, 9 aspect categories, topic clusters |
-| **Visualize** | 6-page Streamlit dashboard | Rankings, trends, word clouds, comparison matrices |
-| **Export** | CSV/Parquet/JSON | Excel-ready files for every analytical dimension |
+| **Visualize** | 8-page animated dashboard with maps, radar, time-series | Rankings, maps, trends, word clouds, radar plots, comparison matrices |
+| **Export** | CSV/Parquet/JSON + HTML Executive Report | Excel-ready files + standalone HTML report |
 | **Loop** | 24/7 continuous collector with auto-resume | Fresh data every N hours, forever |
 
 ### 📊 Real Data — Already Collected
@@ -124,18 +125,34 @@ Generates 332 queries across 8+ cities × 25 medical categories (BM + EN), or 50
 
 ---
 
-## 📈 The Dashboard — 6 Pages
+## 📈 The Dashboard — 8 Pages with Animations
 
 Launch with `python main.py dashboard`. Opens at **http://localhost:8501**.
 
 | Page | What You See |
 |------|-------------|
-| **📊 Overview** | Total reviews, place rankings, rating histograms, top/bottom performers |
-| **😊 Sentiment** | Positive / negative / neutral breakdowns, per-place sentiment scores |
-| **🔍 Aspect Analysis** | What people say about service, price, quality, ambiance, wait time, etc. |
-| **🔑 Keywords** | TF-IDF word cloud, LDA topic clusters, top n-gram phrases |
-| **⚔️ Comparison** | Side-by-side competitor benchmarking across all metrics |
-| **💡 Insights** | Strengths, weaknesses, actionable improvement recommendations |
+| **📊 Executive Summary** | Animated KPI cards, top 3 insights, health gauges, 1-click HTML report export |
+| **📈 Overview & Rankings** | Place leaderboard with gradient tables, rating histogram, top/bottom performers |
+| **😊 Sentiment Analysis** | Donut charts, stacked sentiment-by-rating, per-place breakdowns, sentiment health score |
+| **🔍 Aspect Analysis** | 9-dimension aspect breakdown (service, price, quality, ambiance, location, etc.) |
+| **🔑 Keywords & Topics** | Word cloud, n-gram phrases, LDA topic clusters, keyword-sentiment correlation |
+| **⚔️ Competitor Comparison** | Side-by-side benchmarks, radar charts, aspect heatmap matrix, competitive advantages |
+| **💡 Insights & Roadmap** | Strengths, complaint categories, prioritized improvement roadmap, CSV/HTML export |
+| **🗺️ Map View** | Interactive geographic map with sentiment overlay, place clustering, location rankings |
+
+### ✨ What's New in v2.0
+
+| Feature | Description |
+|---------|-------------|
+| **CSS Animations** | Fade-in, slide-in, pulse, glow, shimmer, counter animations across all pages |
+| **Animated KPI Cards** | Gradient cards with auto-animated counters, trend arrows, hover effects |
+| **Global Filter Bar** | Filter by rating range, sentiment, category, and place — affects all charts |
+| **Map View** | Plotly scatter mapbox with sentiment coloring, review count sizing, zoom/pan |
+| **Radar Charts** | Multi-dimensional spider chart for competitor aspect comparison |
+| **Sentiment Health Score** | Single metric: positive% − negative% with gauge visualization |
+| **HTML Report Generator** | One-click standalone executive report with KPI tables and recommendations |
+| **Donut & Gauge Charts** | Modern chart types replacing basic pie/bar where appropriate |
+| **Professional Theme** | Custom CSS: gradient hero banners, scrollbar styling, card shadows, tooltips |
 
 ---
 
@@ -191,7 +208,9 @@ GoogleMapScrapper/
 │   └── pipeline.py        ╸ Full orchestrator: raw → insights in one call
 │
 ├── dashboard/
-│   └── app.py             ╸ Streamlit 6-page interactive web UI
+│   ├── app.py             ╸ Streamlit 8-page interactive web UI (v2.0)
+│   ├── components.py      ╸ Reusable animated components (KPI cards, filters, reports)
+│   └── styles.py          ╸ Custom CSS (animations, gradients, card themes)
 │
 ├── data/
 │   ├── raw/               ╸ Docker scraper JSON output (745MB+)

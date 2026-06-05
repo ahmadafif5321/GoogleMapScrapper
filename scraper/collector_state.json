@@ -305,12 +305,138 @@
       "batch_query_count": 2,
       "time": "2026-06-05T18:24:01.110128",
       "batch": 39
+    },
+    "bubble tea in Bangi": {
+      "batch_places": 94,
+      "batch_reviews": 9820,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:27:09.494553",
+      "batch": 40
+    },
+    "car wash in Cyberjaya": {
+      "batch_places": 94,
+      "batch_reviews": 9820,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:27:09.494578",
+      "batch": 40
+    },
+    "nasi kandar in Putrajaya": {
+      "batch_places": 145,
+      "batch_reviews": 31323,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:35:39.814789",
+      "batch": 41
+    },
+    "kedai kereta in Bangi": {
+      "batch_places": 145,
+      "batch_reviews": 31323,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:35:39.814809",
+      "batch": 41
+    },
+    "car workshop in Cyberjaya": {
+      "batch_places": 114,
+      "batch_reviews": 32939,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:43:12.320653",
+      "batch": 42
+    },
+    "mamak in Cyberjaya": {
+      "batch_places": 114,
+      "batch_reviews": 32939,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:43:12.320671",
+      "batch": 42
+    },
+    "bakery in Cyberjaya": {
+      "batch_places": 160,
+      "batch_reviews": 22912,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:50:13.659852",
+      "batch": 43
+    },
+    "bengkel kereta in Cyberjaya": {
+      "batch_places": 160,
+      "batch_reviews": 22912,
+      "batch_query_count": 2,
+      "time": "2026-06-05T20:50:13.659875",
+      "batch": 43
+    },
+    "coffee shop in Putrajaya": {
+      "batch_places": 191,
+      "batch_reviews": 57827,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:00:30.051102",
+      "batch": 44
+    },
+    "restaurant in Cyberjaya": {
+      "batch_places": 191,
+      "batch_reviews": 57827,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:00:30.051139",
+      "batch": 44
+    },
+    "kopitiam in Cyberjaya": {
+      "batch_places": 112,
+      "batch_reviews": 24160,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:07:35.184502",
+      "batch": 45
+    },
+    "bubble tea in Putrajaya": {
+      "batch_places": 112,
+      "batch_reviews": 24160,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:07:35.184581",
+      "batch": 45
+    },
+    "bengkel kereta in Kajang": {
+      "batch_places": 218,
+      "batch_reviews": 25785,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:15:45.803254",
+      "batch": 46
+    },
+    "kedai kereta in Putrajaya": {
+      "batch_places": 218,
+      "batch_reviews": 25785,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:15:45.803273",
+      "batch": 46
+    },
+    "nasi kandar in Kajang": {
+      "batch_places": 107,
+      "batch_reviews": 18840,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:22:19.445958",
+      "batch": 47
+    },
+    "nasi kandar in Bangi": {
+      "batch_places": 107,
+      "batch_reviews": 18840,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:22:19.445981",
+      "batch": 47
+    },
+    "bubble tea in Cyberjaya": {
+      "batch_places": 203,
+      "batch_reviews": 30940,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:33:25.481683",
+      "batch": 48
+    },
+    "car detailing in Kajang": {
+      "batch_places": 203,
+      "batch_reviews": 30940,
+      "batch_query_count": 2,
+      "time": "2026-06-05T21:33:25.481702",
+      "batch": 48
     }
   },
   "failed": {},
   "batch_size": 2,
   "delay_seconds": 180,
-  "total_places": 2200,
-  "total_reviews": 406450,
-  "last_updated": "2026-06-05T18:24:01.110198"
+  "total_places": 3544,
+  "total_reviews": 660996,
+  "last_updated": "2026-06-05T21:33:25.481758"
 }
