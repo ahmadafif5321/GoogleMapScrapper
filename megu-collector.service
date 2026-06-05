@@ -1,0 +1,20 @@
+[Unit]
+Description=Megu ReviewScore — continuous data collector (Lane 2)
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ahmadafif5321
+WorkingDirectory=/home/ahmadafif5321/GoogleMapScrapper
+Environment=PATH=/home/ahmadafif5321/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ahmadafif5321/GoogleMapScrapper/run_continuous_collector.sh
+Restart=always
+RestartSec=30
+# keep it polite to system resources
+Nice=10
+StandardOutput=append:/home/ahmadafif5321/GoogleMapScrapper/storage/collector.log
+StandardError=append:/home/ahmadafif5321/GoogleMapScrapper/storage/collector.log
+
+[Install]
+WantedBy=multi-user.target
