@@ -38,3 +38,13 @@ The unit sets `Restart=always`, so the collector self-heals on crash/reboot.
   the OS lock; do not start two).
 - A crashed priority capture's flag is auto-cleared once its PID is dead, so the
   collector never yields forever.
+
+## Watchdog (auto-kills stuck containers)
+
+`scraper/watchdog.sh` runs every 10 min via the `megu-watchdog.timer` user
+service. It stops any scrape container whose output file has been idle past the
+30-min inactivity limit (i.e. hung), without harming a productive scrape. Manual:
+```bash
+./scraper/watchdog.sh && tail storage/watchdog.log
+systemctl --user list-timers megu-watchdog.timer
+```
