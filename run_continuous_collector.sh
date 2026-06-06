@@ -23,6 +23,8 @@ BATCH=2
 DELAY=180          # seconds between batches
 CYCLE_HOURS=12     # re-scrape everything every 12h to stay fresh
 
+# clean up orphaned scrape containers from a previous run (prevent pile-up)
+docker ps -q --filter ancestor=gosom/google-maps-scraper:latest | xargs -r docker stop -t 5 2>/dev/null || true
 mkdir -p storage
 echo "[$(date)] continuous collector starting (queries=$QUERIES)"
 
