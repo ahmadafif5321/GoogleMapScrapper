@@ -11,6 +11,27 @@
 
 ---
 
+## 🏗️ Architecture — 24/7 Production Collector
+
+This isn't a one-off script. It runs as a `systemd` service, 24/7, against a client's business listings — a supervised loop that spins up Docker scraper containers, merges results with DuckDB, and re-schedules queries based on how much new data they're actually yielding. It's resource-capped end to end because an earlier version wasn't: the merge step once ballooned past 10GB of RAM and the kernel OOM-killer stalled the entire host. Every cap below (systemd memory limits, per-container Docker caps, DuckDB spill-to-disk) exists because of that incident.
+
+```mermaid
+flowchart TB
+    subgraph systemd["systemd unit — MemoryHigh=4G · MemoryMax=6G · Nice=10"]
+        LOOP[collector loop]
+    end
+    LOOP -->|spawns| D1["scraper container\n(docker --memory 4g)"]
+    LOOP -->|spawns| D2["scraper container\n(docker --memory 4g)"]
+    D1 --> RAW[(raw batches)]
+    D2 --> RAW
+    RAW --> MERGE["DuckDB incremental merge\nmemory_limit=3GB → spills to disk"]
+    MERGE --> DATA[(deduped dataset)]
+```
+
+Read the full war story: [Fixing OOM crashes in a 24/7 scraper](https://ahmadafif.com/blog/fixing-oom-24-7-scraper)
+
+---
+
 ## 🎯 What This System Does
 
 | Stage | Tool | Output |
