@@ -307,14 +307,14 @@ python main.py export
 ### Target specific competitors
 
 ```bash
-echo "Klinik Utama Cyberjaya" > targets.txt
+echo "Klinik Contoh Cyberjaya" > targets.txt
 echo "Hospital Cyberjaya" >> targets.txt
-python main.py full "Klinik Utama Cyberjaya" "Hospital Cyberjaya" "Qualitas SV Care Clinic Cyberjaya"
+python main.py full "Klinik Contoh Cyberjaya" "Hospital Contoh" "Klinik Contoh 2 Sepang"
 ```
 
 ### Use Google Maps share links directly
 
-The scraper now accepts Google Maps share URLs (e.g., `https://share.google/o7WIMNKjt6TIoNzne`) as queries — drop them in `scraper/queries_ondemand.txt` and run.
+The scraper now accepts Google Maps share URLs (e.g., `https://share.google/<share-id>`) as queries — drop them in `scraper/queries_ondemand.txt` and run.
 
 ---
 

@@ -50,3 +50,5 @@ gmaps-playwright-cache/
 # Scrape coordinator runtime files
 scraper/.scrape.lock
 scraper/.ondemand_priority
+scraper/queries_all.txt
+scraper/queries_ondemand.txt
