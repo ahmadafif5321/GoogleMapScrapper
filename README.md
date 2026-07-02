@@ -2,7 +2,7 @@
 
 > **Scrape thousands of Google Maps reviews → NLP sentiment & topic analysis → 8-page animated dashboard → Actionable business insights**
 >
-> *Bilingual ◆ Batch-collected 450K+ reviews across 12 cities ◆ 3,000+ places ◆ 3,500 lines of Python ◆ 1.1GB of real analytics data*
+> *Bilingual ◆ 2.2M+ reviews across 16 areas ◆ 17,900+ places ◆ 5,100+ lines of Python ◆ 38GB of collected data — and still collecting 24/7*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
@@ -36,26 +36,35 @@ Read the full war story: [Fixing OOM crashes in a 24/7 scraper](https://ahmadafi
 
 | Stage | Tool | Output |
 |-------|------|--------|
-| **Collect** | Docker scraper engine, batch scheduler | 450K+ reviews from 3,000+ places |
+| **Collect** | Docker scraper engine, batch scheduler | 2.2M+ reviews from 17,900+ places |
 | **Analyze** | XLM-RoBERTa sentiment, LDA topics, KeyBERT keywords | Sentiment scores, 9 aspect categories, topic clusters |
 | **Visualize** | 8-page animated dashboard with maps, radar, time-series | Rankings, maps, trends, word clouds, radar plots, comparison matrices |
 | **Export** | CSV/Parquet/JSON + HTML Executive Report | Excel-ready files + standalone HTML report |
 | **Loop** | 24/7 continuous collector with auto-resume | Fresh data every N hours, forever |
 
-### 📊 Real Data — Already Collected
+### 📊 Real Data — Collected & Growing (as of 2 July 2026)
 
 ```
- 2,081 places  ·  17,463 reviews  —  Cyberjaya  +  Putrajaya
-   419 places  ·  10,685 reviews  —  Dengkil  +  Bangi  +  Sepang
-   220 places  ·   6,414 reviews  —  Kajang  +  Serdang
-   163 places  ·   4,082 reviews  —  Seri Kembangan
-   155 places  ·   3,399 reviews  —  Puchong
-   108 places  ·   1,649 reviews  —  Bandar Baru Bangi
-    39 places  ·     694 reviews  —  Subang Jaya
-    11 places  ·     429 reviews  —  Putra Heights
-───────       ──────────
- 3,019 places · 454,956 reviews  —  and growing every cycle
+ 2,778 places  ·  480,201 reviews  —  Petaling Jaya
+ 1,588 places  ·  255,199 reviews  —  Subang Jaya
+ 2,254 places  ·  202,642 reviews  —  Kajang
+ 1,780 places  ·  201,417 reviews  —  Cheras
+ 1,164 places  ·  189,989 reviews  —  Putrajaya
+ 1,546 places  ·  167,528 reviews  —  Cyberjaya
+   991 places  ·  152,989 reviews  —  Bangi
+   694 places  ·  145,813 reviews  —  Bangsar
+   988 places  ·   53,990 reviews  —  Puchong
+   849 places  ·   51,302 reviews  —  Seri Kembangan
+   380 places  ·   22,322 reviews  —  Dengkil
+   376 places  ·   15,733 reviews  —  Sepang
+   551 places  ·   11,616 reviews  —  Nilai
+   173 places  ·    5,072 reviews  —  Salak Tinggi
+ + other areas (Serdang, unclassified suburbs, …)
+────────       ───────────
+17,914 places · 2,241,989 unique reviews · 1,267 merged batches
 ```
+
+**Still growing, unattended.** The collector runs 24/7 as a systemd service with a **yield-aware scheduler**: each of the 470 active queries is re-scheduled based on how many *new* reviews its last run actually produced — a query yielding 3,000 fresh reviews comes back in hours, while a saturated one cools down for weeks. Growth from 455K reviews (June 2026) to 2.24M (July 2026) happened without manual intervention.
 
 ---
 
@@ -218,7 +227,7 @@ GoogleMapScrapper/
 │   ├── collector.py       ╸ Batch scheduler, merge engine, CSV exporter
 │   ├── query_generator.py ╸ Auto-generates 332+ queries across cities
 │   ├── queries_*.txt      ╸ Pre-built query files (100 / full / expansion / ondemand)
-│   └── collector_state.json ╸ Runtime: progress tracking (3K+ places, 450K+ reviews)
+│   └── collector_state.json ╸ Runtime: progress + yield-aware schedule (17.9K+ places, 2.2M+ reviews)
 │
 ├── analytics/
 │   ├── preprocess.py      ╸ Text cleaning, tokenization, filtering
@@ -234,8 +243,8 @@ GoogleMapScrapper/
 │   └── styles.py          ╸ Custom CSS (animations, gradients, card themes)
 │
 ├── data/
-│   ├── raw/               ╸ Docker scraper JSON output (745MB+)
-│   └── processed/         ╸ Parquet + CSV + JSON analytics (370MB+)
+│   ├── raw/               ╸ Docker scraper JSON output (25GB+)
+│   └── processed/         ╸ Parquet + CSV + JSON analytics (13GB+)
 │
 ├── docker-compose.yml     ╸ Scraper container definition
 └── requirements.txt       ╸ Python deps
