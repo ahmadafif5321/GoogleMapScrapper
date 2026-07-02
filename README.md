@@ -308,7 +308,7 @@ python main.py export
 
 ```bash
 echo "Klinik Contoh Cyberjaya" > targets.txt
-echo "Hospital Cyberjaya" >> targets.txt
+echo "Hospital Contoh" >> targets.txt
 python main.py full "Klinik Contoh Cyberjaya" "Hospital Contoh" "Klinik Contoh 2 Sepang"
 ```
 
